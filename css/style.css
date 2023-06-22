@@ -62,7 +62,6 @@ nav li{
 	margin: 0;
 	background-position: center;
 	z-index: 3;
-	background: lightblue;
 }
 #square-box
 {
@@ -70,7 +69,7 @@ nav li{
 	position: absolute;
 	top: 200px;
 	left: 0px;
-	color: white;/
+	color: white;
 	width: 300px;
 	height: 300px;
 	padding: 2%;
@@ -521,7 +520,7 @@ nav li{
 	.testimnl
 	{
 		display: inline;
-		background: ;
+		/* background: ; */
 	}
 	.testi-one
 	{
