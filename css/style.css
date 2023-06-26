@@ -1,21 +1,14 @@
 body
 {
+	
 	padding: 0;
 	margin: 0;
 	font-family: sans-serif;
 }
 .container
 {
-	max-width: 1350;
-	padding: 3%;
-	margin: 0;
-	background: #D4EDEE;
-}
-.body
-{
-	background: white;
-	max-width: 300;
-	border-radius: 20px;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 .heading
 {
@@ -24,7 +17,7 @@ body
 	padding: 2%;
 	align-content: space-between;
 }
-#left-h
+#left-heading
 {
 	width:100px;
 	padding: 0;
@@ -32,36 +25,35 @@ body
 	text-align: center;
 	margin-left:6%;
 }
-#cntr-h
+#cntr-heading
 {
 	margin: 0 auto;
 	width:400px;
 }
-#right-h
+#right-heading
 {
 	width: 150px;
-	align-items: right;
 	margin-right: 4%;
 }
-nav ul
+.heading-ul
 {
 	list-style-type: none;
-
 }
-nav li{
+.heading-li{
 	display: inline-block;
-	padding: 0 0 0 5%;
+	padding-left: 5%;
+}
+.heading-icon{
+	display: inline-block;
+	padding-left: 13%;
 }
 .center-banner
 {
 	position: relative;
-	display: inline-block;
 	width: 100%;
-	height: 80%;
 	padding: 0;
 	margin: 0;
 	background-position: center;
-	z-index: 3;
 }
 #square-box
 {
@@ -70,9 +62,9 @@ nav li{
 	top: 200px;
 	left: 0px;
 	color: white;
-	width: 300px;
-	height: 300px;
-	padding: 2%;
+	width: 400px;
+	height: 250px;
+	padding: 1%;
 	margin: 0;
 	z-index: 3;
 }
@@ -87,12 +79,17 @@ nav li{
 	margin-left: 80px;
 	margin-right: 80px;
 }
+.squares
+{
+	display: flex;
+	padding: 0;
+	position: absolute;
+	top: 650px;
+	left: 200px;
+}
 .empty-squre{
 	border: 3px solid #61727B;
 	background: transparent;
-	position: relative;
-	top: -120px;
-	left: 230px;
 	width: 100px;
 	height: 100px;
 	z-index: 1;
@@ -103,16 +100,15 @@ nav li{
 	width: 64%;
 	margin-left: 18%;
 	margin-bottom:0 ;
-	padding: 3%;
+	padding: 1%;
 	z-index: 2;
 	position: relative;
 }
 .icon-squre
 {
 	background: #61727B;
-	position: relative;
-	top: -230px;
-	left: 1150px;
+	position: absolute;
+	left: 950px;
 	width: 100px;
 	height: 100px;
 	z-index: 3;
@@ -131,7 +127,6 @@ nav li{
 	margin-left: 80px;
 	margin-top: 55px;
 	height: 0;
-/*	display: block;*/
 }
 #caption2
 {
@@ -139,15 +134,39 @@ nav li{
 	font-size: 25px;
 	padding-left: 3%;
 }
+#service-para-icon1
+{
+	margin-top: 14px;
+	width:50px;
+	height:50px;
+}
+#service-para-icon2
+{
+	margin-left:10%;
+	margin-top: 8px;
+	width:50px;
+	height:50px;  
+}
+#service-para-icon3
+{
+	margin-left:10%;
+	margin-top: 14px;
+	width:50px;
+	height:50px;
+}
+.service-icons
+{
+	display: flex;
+	padding-left: 5%;
+}
 .service-para
 {
-/*	background: grey;*/
 	display: flex;
 	text-align: left;
 	margin-left: 115px;
 	padding-bottom: 5%;
 }
-.service-para-div
+.service-para-subdiv
 {
 	padding-left: 30px;
 }
@@ -172,27 +191,33 @@ nav li{
 	height: 35%;
 	margin-left: 7%;
 }
-#contdivw
+#Experience-paragraph
 {
 	margin-left: 8%;
 }
-#contdivw span{
+#experience-heading{
 	font-size: 30px;
 	font-weight: 700;
 }
-#contdivw p
+#experience-para
 {
 	font-size: 18px;
+	font-weight: 300;
+}
+.sub-exp-details
+{
+	margin-left: 15%;
 }
 .sub-exp
 {
 	display: flex;
 	padding: 3%;
 }
-.sub-exp span
+#numbers
 {
-	font-size: 10px;
-	color: grey;
+	font-size: 60px;
+	font-weight: 600;
+	color: #61727B;
 }
 
 .btn-learn
@@ -200,6 +225,14 @@ nav li{
 	padding: 2%;
 	background: transparent;
 	border-color: #61727B;
+}
+#btn-arrow
+{
+	font-size:36px;
+	position: relative; 
+	left:-10px;
+	top: 8px; 
+	font-weight: lighter;
 }
 .expernce{
 	display: flex;
@@ -228,16 +261,18 @@ nav li{
 .exp-head
 {
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: 550;
 }
 #exp-p-sub
 {
 	font-size: 15px;
+	font-weight: 400;
 	line-height: 24px;
 	margin-left: 10px;
+	width: 100%;
 }
 .imgdiv2{
-	width: 60%;
+	width: 80%;
 	height: 50%;
 	margin-left: 55px;
 	margin-top: 40px;
@@ -269,7 +304,17 @@ nav li{
 	margin-top: 30%;
 	height: 15%;
 }
+.num-para
+{
+	text-align: center;
+	margin-top: 12px;
+}
 .customers
+{
+	display: flex;
+	padding: 0;
+}
+.customers-head
 {
 	padding: 2%;
 }
@@ -277,6 +322,28 @@ nav li{
 	margin-left: 60px;
 	font-size: 30px;
 	font-weight: 700;
+}
+#arrows
+{
+	display: flex;
+	width: 5%;
+	height: 8%;
+	margin-top: 40px;
+	margin-left: 700px;
+}
+#left-arrow
+{
+	color: rgb(195, 195, 195);
+	margin: 30%;
+	font-size: 40px;
+	font-weight: lighter;
+}
+#right-arrow
+{
+	color: #61727B;
+	margin: 30%;
+	font-size: 40px;
+	font-weight: lighter;
 }
 .testimnl
 {
@@ -302,25 +369,34 @@ nav li{
 	margin-left: 3%;
 	padding: 3%
 }
+.testi-para
+{
+	font-size:15px;
+}
+.testi-para-head
+{
+	font-size: 30px;
+}
 .testimnl-profile
 {
 	display: flex;
 }
-.testimnl-profile img{
+.testimnl-profile-img1{
 	height: 40px;
-	border-radius: 50%;
+	border-radius: 20px;
 }
-.testimnl-profile p{
-	margin-top: 0;
-}
-#arrows
+.testimnl-profile-img2
 {
-	display: flex;
-	width: 5%;
-	height: 8%;
-	 position: absolute; 
-	left: 1250px;
-	top: 2850px;
+	height: 40px; 
+	border-radius: 20px;
+}
+.testi-name
+{
+	font-size:20px
+}
+.testimnl-profile-para{
+	margin-top: 0;
+	font-size:15px
 }
 .subscribe
 {
@@ -351,6 +427,11 @@ nav li{
 	border: 1px solid white ;
 	box-shadow: -8px -8px 10px -6px #000000;
 }
+#search-para
+{
+	margin-left:15px;
+	margin-top:20px
+}
 #button
 {
 	background:#61727B;
@@ -365,204 +446,776 @@ nav li{
 	color: white;
 	height: 60%;
 	width: 300;
-	border-end-end-radius: 15px;
-	border-end-start-radius: 15px;
 	display: flex;
 	padding: 10% 5% 2% 7%;
 }
-.contact div{
+#company-about
+{
+	padding: 1%;
+	line-height: 25px;
+}
+#company-about-para
+{
+	font-size: 15px;
+}
+#about
+{
+	margin-left: 8%;
 	padding: 2%;
 }
-.contact ul{
+#company
+{
+	margin-left: 5%;
+	padding: 2%;
+}
+#support
+{
+	margin-left: 5%;
+	padding: 2%;
+}
+#get-touch
+{
+	margin-left: 4%;
+	padding: 2%;
+}
+#get-touch-para
+{
+	font-size: 15px;
+	line-height: 25px;
+	margin-top: 35px;
+}
+.contact-list
+{
 	list-style-type: none;
 	padding: 0;
 }
-.contact li{
+.contact-sublist
+{
 	padding-top: 20%;
 	font-size: 15px;
 }
-.contact span{
+.contact-heading
+{
 	font-size: 20px;
 	font-weight: 600;
 }
-.contact p{
+#social-media
+{
+	display: flex;
+}
+.social-media-space
+{
+	margin-left:30px
+}
+.social-media-icon
+{
 	font-size: 15px;
 }
+
+
  
 /*  Responsive website*/
 
-@media(max-width: 700px)
+@media (max-width:1024px)
 {
-	.container
+	#right-heading
 	{
-		max-width: 700px;
-	}
-	#img1
-	{
-		margin-top: 20%;
+		margin-right: 3%;
 	}
 	#square-box
 	{
 		top: 50px;
-		width: 260px;
-		height: 200px;
+		left: 0px;
+		width: 360px;
+		height: 220px;
 		padding: 1%;
 	}
 	#caption1
 	{
-		font-size: 25px;
-		margin-left: 50px;
+		font-size: 16;
 	}
 	#sub1
 	{
-		font-size: 10px;
-		margin-left: 50px;
-		margin-right: 50px;
+		font-size: 12px;
 	}
-	.empty-squre{
-		left: 90px;
-		top: -90px;
+	.squares
+	{
+		top: 420px;
+		left: 150px;
 	}
 	.icon-squre
 	{
-		top: -200px;
-		left: 500px;
+		left: 650px;
 	}
-	.line
+	.service-para-subdiv
 	{
-		margin-left: 50px;
-		width: 80px;
+		padding-left: 10px;
+		width: 22%;
+	} 
+	.para2
+	{
+		font-size: 13px;
 	}
-	.service
+	#service-para-icon2
 	{
-		margin-top: 1%;
+		margin-left: 15px;
+	}
+	#service-para-icon3
+	{
+		margin-left: 15px;
+	}
+	#Experience-paragraph
+	{
+		margin-left: 10%;
+		margin-right: 18%;
+	}
+	.expernce-head
+	{
+		width: 85%;
+	}
+	.imgdiv2
+	{
+		margin-left: 0px;
+		padding-left: 0;
+	}
+	#img2
+	{
+		width: 80%;
+		height: 100%;
+	}
+	#contdiv
+	{
+		padding: 0;
+		width: 80%;
+	}
+	#arrows
+	{
+		margin-left: 450px;
+	}
+	.testi-one
+	{
+		width: 38%;
+	}
+	.testi-two
+	{
+		width: 38%;
+	}
+	.testi-para
+	{
+		width: 90%;
+		font-size: 11px;
+	}
+	.testi-para-head
+	{
+		font-size: 25px;
+	}
+	.subscribe
+	{
+		width: 50%;
+	}
+	.search
+	{
+		left: 300px;
+		max-width: 55%;
+	}
+	#company-about
+	{
+		
+		padding-left: 0;
+		padding-right: 0;
+		width: 30%;
+	}
+	#company-about-para
+	{
+		font-size: 12px;
+	}
+	#about
+	{
+		margin-left: 3%;
+		padding: 1%;
+	}
+	#company
+	{
+		margin-left: 3%;
+		padding: 1%;
+	}
+	#support
+	{
+		margin-left: 4%;
+		padding: 1%;
+	}
+	#get-touch
+	{
+		margin-left: 3%;
+	}
+}
+@media(max-width:768px)
+{
+	#cntr-heading
+	{
+		margin-left: 40px;
+	}
+	#square-box
+	{
+		top: 0px;
+		width: 316px;
+		height: 200px;
+		padding: 0;
+	}
+	#caption1
+	{
+		font-size: 20px;
+		margin-left: 60px;
+	}
+	#sub1
+	{
+		font-size: 11px;
+		margin-left: 60px;
+		line-gap-override: 2px;
+	}
+	.squares
+	{
+		left: 100px;
+		top: 300px;
+	}
+	.icon-squre
+	{
+		left: 450px;
 	}
 	.service-para
 	{
-		margin-left: 50px;
-		padding-left: 0;
-		justify-content: center;
-		text-align: justify-all;
+		margin-left: 90px;
 	}
-	.service-para img{
-		padding-left: 0;
-		width: 30px;
-	}
-	#b2{
-		width: 40px;
-		margin-left:0px;
-	}
-	#service-para-div
+	.service-para-subdiv
 	{
-		padding-left: 5px;
+		width: 52%;
 	}
-	#para1
+	.service-icons
 	{
-		font-size: 1px;
+		padding-left: 2%;
+		
 	}
-	#b3
+	#service-para-icon1
 	{
-		width: 30px;
-		margin-left: 10px;
+		width:30px;
+		height:30px;
+	}
+	#service-para-icon2
+	{
+		margin-left:8%;
+		width:40px;
+		height:40px;  
+	}
+	#service-para-icon3
+	{
+		width:30px;
+		height:30px;
 	}
 	.exp-nmbr
 	{
-		padding-top: 8%;
+		display: inline;
+		padding: 0;
 	}
 	#imgexp
 	{
-		width: 40%;
-		height: 40%;
-		margin-top: 18px;
-	}
-	#contdivw
-	{
-		margin-left: 5%;
-	}
-	.sub-exp
-	{
-		padding: 1%;
-	}
-	.sub-exp p{
-		font-size: 1%;
+		margin-left: 10%;
+		width: 50%;
+		height: 50%;
 	}
 	.expernce
 	{
 		display: inline;
-		width: 40%;
+		padding-top: 10%;
 	}
-	.expernce-head
+	#exp-p
 	{
-		width: 80%;
-		margin-left: 1px;
-	}
-	#contdiv
-	{
-		padding: 2%;
-		width: 550px;
+		padding-top: 7%;
 	}
 	.imgdiv2
 	{
-		width: 80%;
-		height: 80%;
-		margin-left: 55px;
-		margin-top: 40px;
-	}
-	#img2
-	{
-		margin-left: 50px;
+		margin-left: 140px;
 	}
 	#arrows
 	{
-		left: 530px;
-		top: 2700px;
+		margin-left: 250px;
 	}
 	.testimnl
 	{
 		display: inline;
-		/* background: ; */
+	}
+	.testi-one
+	{
+		width: 70%;
+		margin-left: 10%;
+	}
+	.testi-two
+	{
+		width: 70%;
+		margin-left: 10%;
+		margin-top: 5%;
+	}
+	.testi-para
+	{
+		font-size: 15px;
+	}
+	.subscribe
+	{
+		margin-left: 20%;
+		width: 60%;
+	}
+	.search
+	{
+		max-width: 71%;
+		left: 130px;
+	}
+	.contact
+	{
+		display: block;
+		text-align: center;
+
+	}
+	#company-about
+	{
+		padding-left: 200px;
+		width: 40%;
+	}
+	#about
+	{
+		margin-top: 5%;
+	}
+	#company
+	{
+		margin-top: 5%;
+	}
+	#support
+	{
+		margin-top: 5%;
+	}
+	#get-touch
+	{
+		margin-top: 5%;
+	}
+	#get-touch-para
+	{
+		margin-top: 5%;
+	}
+	.contact-sublist
+	{
+		padding-top: 2%;
+	}
+	#social-media
+	{
+		margin-left: 270px;
+	}
+}
+@media (max-width: 450px)
+{
+	#cntr-heading
+	{
+		position: absolute;
+		top: 50px;
+		left: 60px;
+		width: 70px;
+	}
+	#right-heading
+	{
+		margin-left: 230px;
+		width: 40px;
+	}
+	.heading-ul
+	{
+		display: flex;
+		padding: 2%;
+	}
+	.heading-li
+	{
+		padding-left: 10px;
+	}
+	.heading-icon
+	{
+		margin-left: 7%;
+	}
+	.icon-squre
+	{
+		left: 250px;
+	}
+	.squares
+	{
+		top: 280px;
+		left: 50px;
+	}
+	#img1{
+		top: 120px;
+	}
+	#caption1
+	{
+		font-size: 13px;
+		margin-left: 30px;
+	}
+	#sub1
+	{
+		font-size: 9px;
+		margin-left: 30px;
+	}
+	#square-box
+	{
+		width: 200px;
+		height: 150px;
+		top: 50px;
+	}
+	.service
+	{
+		padding-top: 200px;
+	}
+	.line
+	{
+		margin-left: 40px;
+	}
+	.service-para
+	{
+		display: inline-block;
+
+	}
+	.service-para-subdiv
+	{
+		width: 200px;
+	}
+	#service-para-icon2
+	{
+		margin-left: -10px;
+	}
+	#service-para-icon3
+	{
+		margin-left: -10px;
+	}
+	#imgexp
+	{
+		margin-left: 15%;
+	}
+	#Experience-paragraph
+	{
+		margin-left: 15%;
+		margin-top: 80px;
+	}
+	.expernce
+	{
+		margin-left: 50px;
+	}
+	.expernce-head
+	{
+		margin-top: 70px;
+	}
+	#exp-p
+	{
+		font-size: 25px;
+	}
+	#experience-heading
+	{
+		font-size: 25px;
+	}
+	#experience-para
+	{
+		font-size: 17px;
+	}
+	#exp-p-sub
+	{
+		font-size: 12px;
+	}
+	.imgdiv2
+	{
+		margin-left: 65px;
+		margin-top: 25px;
+	}
+	#cus-p
+	{
+		margin-left: 40px;
+	}
+	#arrows
+	{
+		margin-left: 10px;
+	}
+	#left-arrow
+	{
+		font-size: 20px;
+	}
+	#right-arrow
+	{
+		font-size: 20px;
+	}
+	.testi-para-head
+	{
+		font-size: 23px;
+	}
+	.testi-para
+	{
+		font-size: 9px;
+	}
+	.testi-name
+	{
+		font-size: 15px;
+	}
+	.testimnl-profile-para
+	{
+		font-size: 11px;
+	}
+	#sub-p-head
+	{
+		font-size: 22px;
+	}
+	#sub-p
+	{
+		font-size: 10px;
+	}
+	.search
+	{
+		max-width: 90%;
+		display: flex;
+		left: 17px;
+	}
+	#search-para
+	{
+		font-size: 8px;
+	}
+	#button
+	{
+		font-size: 10px;
+		margin-left: 200px;
+	}
+	#company-about
+	{
+		padding-left: 80px;
+		width: 60%;
+	}
+	#social-media
+	{
+		margin-left: 130px;
+	}	
+}
+@media (max-width: 380px)
+{
+	#cntr-heading
+	{
+		left: 30px;
+	}
+	#right-heading
+	{
+		margin-left: 200px;
+	}
+	#img1
+	{
+		left: -30px;
+		top: 40px;
+		height: 100%;
+		width: 80%;
+	}
+	.squares
+	{
+		visibility: hidden;
+	}
+	.icon-squre
+	{
+		left: 50px;
+	}
+	#square-box
+	{
+		top: 280px;
+		left: 40px;
+		width: 300px;
+		height: 200px;
+	}
+	#caption1
+	{
+		padding-top: 2%;
+		font-size: 20px;
+	}
+	#sub1
+	{
+		font-size: 11px;
+	}
+	.line
+	{
+		margin-left: 30px;
+	}
+	.service
+	{
+		padding-top: 300px;
+	}
+	.service-para
+	{
+		margin-left: 50px;
+	}
+	#imgexp
+	{
+		width: 80%;
+		height: 50%;
+		margin-left: 50px;
+	}
+	#experience-heading
+	{
+		width: 100%;
+	}
+	#Experience-paragraph
+	{
+		margin-left: 50px;
+	}
+	#experience-para
+	{
+		width: 120%;
+	}
+	.sub-exp{
+		padding-left: 0;
+		margin-left: -8px;
+	}
+	#numbers
+	{
+		font-size: 45px;
+	}
+	.expernce-head
+	{
+		margin-left: -8px;
+	}
+	#exp-p-sub
+	{
+		font-size: 10px;
+	}
+	#cus-p
+	{
+		font-size: 25px;
+	}
+	#arrows
+	{
+		margin-left: 20px;
+		margin-top: 55px;
 	}
 	.testi-one
 	{
 		width: 80%;
-		margin-left: 50px;
+	}
+	.testi-para-head
+	{
+		font-size: 20px;
+	}
+	.testi-para
+	{
+		font-size: 9px;
 	}
 	.testi-two
 	{
-		margin-top: 50px;
-		margin-left: 50px;
 		width: 80%;
 	}
 	.subscribe
 	{
-		margin-left: 10%;
 		width: 80%;
-		padding: 0%;
+		margin-left: 35px;
 	}
-	.search
+	#button
 	{
-		left: 60px;
-		top: 30px;
-		max-width: 85%;
-		padding-bottom: 10px;
-	}
-	.contact
-	{
-		height: 60%;
-		width: 350;
-	}
-	.contact div{
-		padding: 1%;
-	}
-	.contact li{
-		padding-top: 20%;
 		font-size: 12px;
+		padding: 1%;
+		margin-left: 165px;
 	}
-	.contact span{
-		font-size: 15px;
+	#company-about
+	{
+		width: 66%;
+		margin-left: -10px;
+	}
+	#social-media
+	{
+		margin-left: 100px;
+	}
+}
+@media (max-width: 320px)
+{
+	#cntr-heading
+	{
+		left: 5px;
+	}
+	#right-heading
+	{
+		margin-left: 160px;
+	}
+	#square-box
+	{
+		left: 20px;
+		top: 250px;
+		width: 270px;
+	}
+	#sub1
+	{
+		font-size: 10px;
+	}
+	.service
+	{
+		padding-top: 280px;
+	}
+	.line
+	{
+		width: 13%;
+		margin-top: 40px;
+	}
+	#caption2
+	{
+		padding-left: 3%;
+		font-size: 20px;
 		font-weight: 600;
 	}
-	.contact p{
-		font-size: 12px;
+	#experience-heading
+	{
+		font-weight: 600;
+	}
+	#experience-para
+	{
+		font-size: 15px;
+	}
+	.expernce-cont
+	{
+		margin-left: -15px;
+	}
+	.numbr-icons
+	{
+		margin-top: 10px;
+	}
+	#exp-p-sub
+	{
+		width: 104%;
+		font-size: 10px;
+		margin: 5px;
+	}
+	#cus-p
+	{
+		font-size: 20px;
+	}
+	#arrows
+	{
+		margin-top: 45px;
+	}
+	.testi-para-head
+	{
+		font-size: 19px
+	}
+	.testi-para
+	{
+		font-size: 13px;
+	}
+	#sub-p
+	{
+		font-size: 13px;
+	}
+	#button
+	{
+		margin-left: 120px;
+	}
+	#company-about
+	{
+		margin-top: 20px;
+		margin-left: -25px;
+	}
+	#company-about-para
+	{
+		font-size: 10px;
+	}
+	#social-media
+	{
+		margin-left: 80px;
 	}
 }
