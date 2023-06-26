@@ -34,7 +34,11 @@ body
 	width: 150px;
 	margin-right: 4%;
 }
-.right-icons
+.search-icons
+{
+	font-size: 15px
+}
+.menu-icons
 {
 	font-size: 15px
 }
@@ -224,7 +228,7 @@ body
 	display: flex;
 	padding: 3%;
 }
-#numbers
+.numbers
 {
 	font-size: 60px;
 	font-weight: 600;
@@ -363,6 +367,10 @@ body
 	margin-left: 2%;
 }
 .quote-icon
+{
+	color: white;
+}
+.quote-icon-testi2
 {
 	color: white;
 }
@@ -522,7 +530,15 @@ body
 {
 	margin-left:30px
 }
-.social-media-icon
+.insta-icon
+{
+	font-size: 15px;
+}
+.facebook-icon
+{
+	font-size: 15px;
+}
+.twitter-icon
 {
 	font-size: 15px;
 }
