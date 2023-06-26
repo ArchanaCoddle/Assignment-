@@ -1,6 +1,5 @@
 body
 {
-	
 	padding: 0;
 	margin: 0;
 	font-family: sans-serif;
@@ -34,6 +33,10 @@ body
 {
 	width: 150px;
 	margin-right: 4%;
+}
+.right-icons
+{
+	font-size: 15px
 }
 .heading-ul
 {
@@ -113,6 +116,14 @@ body
 	height: 100px;
 	z-index: 3;
 	margin: 0;
+}
+#down-arrow-icon
+{
+	color: white;
+	margin-left: 40%;
+	 margin-top: 30%;
+	font-size: 40px;
+	font-weight: lighter;
 }
 .service
 {
@@ -350,6 +361,10 @@ body
 	display: flex;
 	padding: 2%;
 	margin-left: 2%;
+}
+.quote-icon
+{
+	color: white;
 }
 .testi-one
 {
