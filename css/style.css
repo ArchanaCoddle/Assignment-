@@ -581,7 +581,7 @@ body
 	.service-para-subdiv
 	{
 		padding-left: 10px;
-		width: 22%;
+		width: 50%;
 	} 
 	.para2
 	{
@@ -643,10 +643,11 @@ body
 	.subscribe
 	{
 		width: 50%;
+		margin-left: 250px;
 	}
 	.search
 	{
-		left: 300px;
+		left: 250px;
 		max-width: 55%;
 	}
 	#company-about
