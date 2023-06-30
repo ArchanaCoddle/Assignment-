@@ -1007,7 +1007,7 @@ body
 	{
        display: none;
        position: absolute;
-       background: #9c9c9c;
+       background: #61727B;
        min-width: 100px;
        right: 1px;
        padding: 0px 20px;
@@ -1021,7 +1021,7 @@ body
     .dropdown-li 
 	{
        padding: 20px 0;
-	   border-top: 1px solid rgb(195, 195, 195);
+	   border-top: 1px solid rgb(177, 177, 177);
 	   text-decoration: none;
     }
     .menu:checked ~ .dropdown-content 
@@ -1246,7 +1246,7 @@ body
 	}
 	#company-about
 	{
-		padding-left: 130px;
+		padding-left: 150px;
 		width: 60%;
 	}
 	#social-media
@@ -1519,15 +1519,17 @@ body
 	{
 		font-size: 11px;
 	}
+	
 	#button
 	{
 		margin-left: 0px;
+		padding: 1%;
 	}
 	#company-about
 	{
 		margin-top: 20px;
 		margin-left: -80px;
-		width: 85%;
+		width: 75%;
 	}
 	#company-about-para
 	{
