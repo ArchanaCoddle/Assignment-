@@ -1242,7 +1242,7 @@ body
 	#button
 	{
 		font-size: 10px;
-		margin-left: 200px;
+		margin-left: 0px;
 	}
 	#company-about
 	{
@@ -1397,7 +1397,7 @@ body
 	{
 		font-size: 12px;
 		padding: 1%;
-		margin-left: 165px;
+		margin-left: 0px;
 	}
 	#company-about
 	{
@@ -1520,7 +1520,7 @@ body
 	}
 	#button
 	{
-		margin-left: 120px;
+		margin-left: 0px;
 	}
 	#company-about
 	{
