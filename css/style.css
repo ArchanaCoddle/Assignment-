@@ -1028,6 +1028,15 @@ body
 	{
        display: block;
     }
+	.close-option
+	{
+		float: right;
+	}
+	
+	#close-icon
+	{
+		color: #ffffff;
+	}
 	.icon-squre
 	{
 		left: 20px;
