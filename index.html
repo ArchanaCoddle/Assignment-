@@ -39,7 +39,7 @@
             <p class="heading-captn">Luxterior</p>
             <div class="main-menu">
               <input type="checkbox" id="menu" class="menu">
-              <label for="menu" class="dropdown-btn"><i class="fa fa-bars"></i></label>
+              <label for="menu" class="dropdown-btn"><i class="fa fa-bars" id="menu-icons-resposive"></i></label>
               <div class="dropdown-content">
                 <ul class="dropdown-ul">
 					<li class="close-option"><i class="fa fa-times" id="close-icon"></i></li>
@@ -53,17 +53,20 @@
          </nav>
 		<!-- center image content -->
 		<div class="center-banner">
-			<img id="img1" src="media/img1.jpeg" alt="img1">
+			<div class="imagesquare">
+				<img id="img1" src="media/img1.jpeg" alt="img1">
+				<div class="squares">
+					<div class="empty-squre"></div>
+					<div class="icon-squre">
+						<i class="fa fa-long-arrow-down" id="down-arrow-icon"></i>
+					</div>
+				</div>
+			</div>
 			<div id="square-box">
 				<p id="caption1">We help you make modern interior</p>
 				<p id="sub1">We will help you to make an elegant and luxurious interior designed by professional interior designers.</p>
 			</div>
-			<div class="squares">
-				<div class="empty-squre"></div>
-				<div class="icon-squre">
-					<i class="fa fa-long-arrow-down" id="down-arrow-icon"></i>
-				</div>
-			</div>
+			
 		</div>
 
 		<!-- services -->
@@ -146,6 +149,7 @@
 					</div>
 					<div id="contdiv">
 						<br><br>
+						<div id="line"></div>
 						<p id="exp-p-sub">
 						<span class="exp-head">Briefing</span><br><br>
 						First thing you determine the concept and model you want, then choose what colors and material you want to use in your furniture. <br><br>
@@ -210,62 +214,63 @@
 			<button id="button">Subscribe</button>
 		</div>
 		<!-- contact -->
-		<footer class="contact">
-			<div id="company-about">
-				<p id="company-about-para"><span class="contact-heading">Luxterior</span><br><br>
-					We will help you to make an elegant and luxerious interior designed by professional interior designers.</p> 
-			</div>
-			<div id="about">
-				<span class="contact-heading">About</span>
-				<ul class="contact-list">
-					<li class="contact-sublist"><a href="#about" class="contact">About</a></li>
-					<li class="contact-sublist"><a href="#Features" class="contact">Features</a></li>
-					<li class="contact-sublist"><a href="#News" class="contact">News</a></li>
-					<li class="contact-sublist"><a href="#Careers" class="contact">Careers</a></li>
-				</ul>
-			</div>
-			<div id="company">
-				<span class="contact-heading">Company</span>
-				<ul class="contact-list">
-					<li class="contact-sublist"><a href="#mission" class="contact">Our mission</a></li>
-					<li class="contact-sublist"><a href="#Furture" class="contact">Furture with us</a></li>
-					<li class="contact-sublist"><a href="#NAQ" class="contact">NAQ</a></li>
-					<li class="contact-sublist"><a href="#Blog" class="contact">Blog</a></li>
-				</ul>
-			</div>
-			<div id="support">
-				<span class="contact-heading">Support</span>
-				<ul class="contact-list">
-					<li class="contact-sublist"><a href="#Accounts" class="contact">Accounts</a></li>
-					<li class="contact-sublist"><a href="#Support" class="contact">Support Center</a></li>
-					<li class="contact-sublist"><a href="#Feedback" class="contact">Feedback</a></li>
-					<li class="contact-sublist"><a href="#Contact" class="contact">Contact us</a></li>
-					<li class="contact-sublist"><a href="#Location" class="contact">Location</a></li>
-				</ul>
-			</div>
-			<div  id="get-touch">
-				<span class="contact-heading">Get in touch</span>
-				<p id="get-touch-para">Questions @feedback <br> we know us more about</p>
-				<br>
-				<div id="social-media">
-					<div>
-						<a href="#insta" class="social-app">
-							<i class="fa fa-instagram" id="insta-icon"></i>
-						</a>
-					</div>
-					<div class="social-media-space">
-						<a href="#insta" class="social-app">
-							<i class="fa fa-facebook" id="facebook-icon"></i> 
-						</a>
-					</div>  
-					<div  class="social-media-space">
-						<a href="#insta" class="social-app">
-							<i class="fa fa-twitter" id="twitter-icon"></i> 
-						</a>
-					</div>
+		
+	</div>
+	<footer class="contact">
+		<div id="company-about">
+			<p id="company-about-para"><span class="contact-heading">Luxterior</span><br><br>
+				We will help you to make an elegant and luxerious interior designed by professional interior designers.</p> 
+		</div>
+		<div id="about">
+			<span class="contact-heading">About</span>
+			<ul class="contact-list">
+				<li class="contact-sublist"><a href="#about" class="contact">About</a></li>
+				<li class="contact-sublist"><a href="#Features" class="contact">Features</a></li>
+				<li class="contact-sublist"><a href="#News" class="contact">News</a></li>
+				<li class="contact-sublist"><a href="#Careers" class="contact">Careers</a></li>
+			</ul>
+		</div>
+		<div id="company">
+			<span class="contact-heading">Company</span>
+			<ul class="contact-list">
+				<li class="contact-sublist"><a href="#mission" class="contact">Our mission</a></li>
+				<li class="contact-sublist"><a href="#Furture" class="contact">Furture with us</a></li>
+				<li class="contact-sublist"><a href="#NAQ" class="contact">NAQ</a></li>
+				<li class="contact-sublist"><a href="#Blog" class="contact">Blog</a></li>
+			</ul>
+		</div>
+		<div id="support">
+			<span class="contact-heading">Support</span>
+			<ul class="contact-list">
+				<li class="contact-sublist"><a href="#Accounts" class="contact">Accounts</a></li>
+				<li class="contact-sublist"><a href="#Support" class="contact">Support Center</a></li>
+				<li class="contact-sublist"><a href="#Feedback" class="contact">Feedback</a></li>
+				<li class="contact-sublist"><a href="#Contact" class="contact">Contact us</a></li>
+				<li class="contact-sublist"><a href="#Location" class="contact">Location</a></li>
+			</ul>
+		</div>
+		<div  id="get-touch">
+			<span class="contact-heading">Get in touch</span>
+			<p id="get-touch-para">Questions @feedback <br> we know us more about</p>
+			<br>
+			<div id="social-media">
+				<div>
+					<a href="#insta" class="social-app">
+						<i class="fa fa-instagram" id="insta-icon"></i>
+					</a>
+				</div>
+				<div class="social-media-space">
+					<a href="#insta" class="social-app">
+						<i class="fa fa-facebook" id="facebook-icon"></i> 
+					</a>
+				</div>  
+				<div  class="social-media-space">
+					<a href="#insta" class="social-app">
+						<i class="fa fa-twitter" id="twitter-icon"></i> 
+					</a>
 				</div>
 			</div>
-		</footer>
-	</div>
+		</div>
+	</footer>
 </body>
 </html>

@@ -99,8 +99,10 @@ body
 	display: flex;
 	padding: 0;
 	position: absolute;
-	top: 600px;
-	left: 200px;
+	top: 0px;
+	left: 0px;
+	margin-left: 15%;
+	margin-top: 45%;
 }
 .empty-squre{
 	border: 3px solid #61727B;
@@ -123,11 +125,12 @@ body
 {
 	background: #61727B;
 	position: absolute;
+	/* margin-left: 80%; */
 	left: 850px;
 	width: 100px;
 	height: 100px;
 	z-index: 3;
-	margin: 0;
+	/* margin: 0; */
 }
 #down-arrow-icon
 {
@@ -293,14 +296,11 @@ body
 	display:inline-block;
 	width: 40%;
 }
-.expernce-cont
-{
-	display: flex;
-}
 #contdiv
 {
 	padding: 2%;
 	width: 90%;
+	counter-reset: counter-name;
 }
 #exp-p
 {
@@ -331,6 +331,25 @@ body
 	width: 70%;
 	height: 50%;
 }
+/* .exp-head::before
+{
+	counter-increment: counter-name;
+	content: counter(counter-name);
+	position: absolute;
+	left: 50px;
+	background: #61727B;
+	width: 20px;
+	height: 20px;
+	 border-radius: 20px; 
+	color: white;
+	padding: 1%;
+	margin-top: -5px;
+	text-align: center;
+} */
+.expernce-cont
+{
+	display: flex;
+}
 .numbr-icons
 {
 	margin-top: 5%;
@@ -355,7 +374,7 @@ body
 }
 .num-para
 {
-	text-align: center;
+	text-align: center; 
 	margin-top: 12px;
 }
 .customers
@@ -631,15 +650,15 @@ body
 	{
 		font-size: 12px;
 	}
-	.squares
+	/* .squares
 	{
 		top: 420px;
 		left: 150px;
-	}
+	}*/
 	.icon-squre
 	{
 		left: 650px;
-	}
+	} 
 	.line
 	{
 		margin-left: 60px;
@@ -767,12 +786,211 @@ body
 	}
 	#support
 	{
-		margin-left: 4%;
+		margin-left: 3%;
 		padding: 1%;
 	}
 	#get-touch
 	{
 		margin-left: 3%;
+	}
+}
+/* @media (max-width:931px)
+{
+	.squares
+	{
+		top: 600px;
+		left: 180px;
+	}
+	.icon-squre
+	{
+		left: 750px;
+	}
+} */
+@media(max-width:995px)
+{
+	#caption1 , #sub1
+	{
+		margin-left: 55px;
+	}
+	/* .squares
+	{
+		left: 100px;
+		top: 300px;
+	}
+	.icon-squre
+	{
+		left: 480px;
+	} */
+	#caption2
+	{
+		width: 40%;
+	}
+	.service-para-subdiv
+	{
+		width: 100%;
+	}
+	.p1
+	{
+		font-size: 20px;
+	}
+	#experience-heading
+	{
+		width: 100%;
+	}
+	.numbers{
+		font-size: 50px;
+	}
+	.expernce
+	{
+		margin-left: 50px;
+	}
+	#exp-p
+	{
+		width: 100%;
+	}
+	.exp-head
+	{
+		font-size: 17px;
+	}
+	#exp-p-sub
+	{
+		font-size: 14px;
+	}
+	.imgdiv2
+	{
+		margin-top: 200px;
+	}
+	#img2
+	{
+		width: 100%;
+		height: 100%;
+	}
+	#arrows
+	{
+		margin-left: 100px;
+	}
+}
+@media(max-width:820px)
+{
+	.icon-squre
+	{
+		left: 480px;
+	}
+}
+@media(max-width:780px)
+{
+	#caption1 , #sub1
+	{
+		margin-left: 55px;
+	}
+	.squares
+	{
+		left: 100px;
+		top: -50pxpx;
+		margin-left: 0;
+	}
+	.icon-squre
+	{
+		left: 480px;
+	}
+	#caption2
+	{
+		width: 40%;
+	}
+	.service-para-subdiv
+	{
+		width: 100%;
+	}
+	.p1
+	{
+		font-size: 20px;
+	}
+	#experience-heading
+	{
+		width: 100%;
+	}
+	.numbers{
+		font-size: 50px;
+	}
+	.expernce
+	{
+		margin-left: 50px;
+	}
+	#exp-p
+	{
+		width: 100%;
+	}
+	.exp-head
+	{
+		font-size: 17px;
+	}
+	#exp-p-sub
+	{
+		font-size: 11px;
+	}
+	.imgdiv2
+	{
+		margin-top: 200px;
+	}
+	#img2
+	{
+		width: 100%;
+		height: 100%;
+	}
+	#arrows
+	{
+		margin-left: 100px;
+	}
+	.testi-para-head
+	{
+		font-size: 24px;
+	}
+	.contact
+	{
+		display: block;
+		text-align: center;
+		padding: 0;
+	}
+	#company-about
+	{
+		padding-left: 250px;
+		width: 60%;
+		padding-top: 10%;
+	}
+	#about
+	{
+		margin-top: 5%;
+	}
+	#company
+	{
+		margin-top: 5%;
+		margin-left: 30%;
+		width: 40%;
+	}
+
+	#support
+	{
+		margin-top: 5%;
+		margin-left: 30%;
+		width: 40%;
+	}
+	#get-touch
+	{
+		margin-top: 5%;
+		margin-left: 30%;
+		width: 40%;
+	}
+	#get-touch-para
+	{
+		margin-top: 5%;
+	}
+	.contact-sublist
+	{
+		padding-top: 2%;
+	}
+	#social-media
+	{
+		margin-left: 100px;
 	}
 }
 @media(max-width:768px)
@@ -804,7 +1022,7 @@ body
 	.squares
 	{
 		left: 100px;
-		top: 300px;
+		top: 0px;
 	}
 	.icon-squre
 	{
@@ -879,7 +1097,7 @@ body
 	}
 	.imgdiv2
 	{
-		margin-left: 140px;
+		margin-left: 80px;
 	}
 	.customers-head
 	{
@@ -995,6 +1213,10 @@ body
         position: relative;
         z-index: 4;
     }
+	#menu-icons-resposive
+	{
+		margin-right: 1%;
+	}
     .dropdown-a
 	{
         color: #ffffff; 
@@ -1032,7 +1254,6 @@ body
 	{
 		float: right;
 	}
-	
 	#close-icon
 	{
 		color: #ffffff;
@@ -1466,10 +1687,6 @@ body
 	{
 		font-size: 16px;
 		font-weight: 550;
-	}
-	.quality-para
-	{
-		font-size: 13px;
 	}
 	#experience-heading
 	{
