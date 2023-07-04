@@ -519,7 +519,6 @@ body
 	background: #61727B;
 	text-decoration: none;
 	color: white;
-	height: 60%;
 	width: auto;
 	display: flex;
 	padding: 10% 5% 2% 7%;
@@ -609,7 +608,11 @@ body
 
 
  
-/*  Responsive website*/
+/* 
+-------------------
+ Responsive website
+-------------------
+ */
 
 @media (max-width:1024px)
 {
@@ -769,6 +772,7 @@ body
 	}
 	#get-touch
 	{
+		margin-top: -8px;
 		margin-left: 3%;
 	}
 }
