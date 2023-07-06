@@ -1297,6 +1297,7 @@ body
 	.service
 	{
 		padding-top: 270px;
+		gap: 0;
 	}
 	.line
 	{
@@ -1320,6 +1321,7 @@ body
 	.service-icons
 	{
 		width: 80%;	
+		gap: 0;
 	}
 	#service-para-icon1
 	{
@@ -1662,6 +1664,7 @@ body
 	.service
 	{
 		padding-top: 250px;
+		gap: 20px;
 	}
 	.line
 	{
