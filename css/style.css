@@ -513,7 +513,7 @@ body
 {
 	background:#61727B;
 	border: none;
-	margin-left:0px;
+	margin-right:5px;
 	margin-top: 10px;
 	padding: 2%;
 	width: 20%;
@@ -1124,7 +1124,6 @@ body
 		margin-left: 30%;
 		width: 40%;
 	}
-
 	#support
 	{
 		margin-top: 5%;
@@ -1426,8 +1425,12 @@ body
 	}
 	#company-about
 	{
-		padding-left: 120px;
-		width: 80%;
+		padding-left: 100px;
+		width: 76%;
+	}
+	#company-about-para
+	{
+		padding-left: 20px;
 	}
 	#social-media
 	{
