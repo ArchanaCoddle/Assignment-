@@ -800,17 +800,18 @@ body
 	#company
 	{
 		margin-left: 3%;
-		padding: 1%;
+		width: 13%;
 	}
 	#support
 	{
 		margin-left: 3%;
-		padding: 1%;
+		width: 13%;
 	}
 	#get-touch
 	{
 		margin-top: 0px;
 		margin-left: 3%;
+		width: 18%;
 	}
 }
 @media(max-width:995px)
@@ -1077,10 +1078,11 @@ body
 	{
 		margin-top: 10%;
 		width: 50%;
+		margin-left: 70px;
 	}
 	#experience-heading
 	{
-		width: 50%;
+		width: 90%;
 	}
 	.caption-exp
 	{
@@ -1088,7 +1090,7 @@ body
 	}
 	.experienceList
 	{
-		padding-left: 73px;
+		margin-left: 60px;
 	}
 	.experience-timeline{
 		display: inline;
@@ -1210,13 +1212,10 @@ body
 	}
     .main-menu 
 	{
+		width: 15%;
         position: relative;
         z-index: 4;
     }
-	#menu-icons-resposive
-	{
-		margin-right: 1%;
-	}
     .dropdown-a
 	{
         color: #ffffff; 
@@ -1363,6 +1362,10 @@ body
 	.caption-exp
 	{
 		width: 80%;
+	}
+	.experienceList
+	{
+		margin-left: 20px;
 	}
 	.imgdiv2
 	{
