@@ -714,25 +714,37 @@ body
 	}
 	#Experience-paragraph
 	{
-		margin-left: 10%;
-		margin-right: 18%;
+		width: 40%;
 	}
 	#experience-heading
 	{
 		width: 75%;
 	}
+	#experience-para
+	{
+		width: 100%;
+	}
 	.exp-nmbr
 	{
-		gap: 40px;
+		margin-left: 45px;
+		gap: 50px;
 	}
 	.caption-exp
 	{
 		width: 40%;
 	}
+	.experienceList
+	{
+		margin-left: 40px;
+	}
 	.imgdiv2
 	{
 		width: 90%;
 		height: 70%;
+	}
+	.customers
+	{
+		margin-left: 40px;
 	}
 	#arrows
 	{
