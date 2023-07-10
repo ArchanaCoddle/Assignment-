@@ -99,6 +99,7 @@ body
 .squares
 {
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0;
 	position: absolute;
 	margin-left: -3%;
@@ -128,6 +129,7 @@ body
 {
 	background: #61727B;
 	position: absolute;
+	/* float: right; */
 	left: 950px;
 	width: 100px;
 	height: 100px;
@@ -165,37 +167,38 @@ body
 {
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
 }
 #service-icon2
 {
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
 }
 #service-icon3
 {
 	width: 100%;
 	height: 100%;
+	object-fit: contain;
 }
 .service-para-icon1
 {
 	width: 50px;
 	height: 50px;
 	margin-top: 20px;
-	object-fit: contain;
+	
 }
 .service-para-icon2
 {
 	width: 50px;
 	height: 50px;
 	margin-top: 6px;
-	object-fit: contain;
 }
 .service-para-icon3
 {
 	width: 50px;
 	height: 50px;
 	margin-top: 20px;
-	object-fit: contain;
 }
 #service-para-icon2
 {
@@ -663,7 +666,6 @@ body
 		margin-left: 500px;
 	}
 }
-
 @media (max-width:1024px)
 {
 	#right-heading
@@ -1229,6 +1231,28 @@ body
 		margin-left: 100px;
 	}
 }
+@media (max-width:636px)
+{
+	#cntr-heading
+	{
+		margin-left: 0;
+	}
+	.squares
+	{
+		left: 50px;
+		top: 280px;
+	}
+	.icon-squre
+	{
+		left: 400px;
+	}
+
+	#arrows
+	{
+		margin-left: 40px;
+	}
+	
+}
 @media (max-width: 450px)
 {
 	.heading
@@ -1621,7 +1645,6 @@ body
 	{
 		margin-left: 20px;
 	}
-	
 	#experience-para
 	{
 		width: 90%;
