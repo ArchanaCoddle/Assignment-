@@ -1,54 +1,44 @@
-body
-{
+body{
 	padding: 0;
 	margin: 0;
 	font-family: sans-serif;
 }
-.container
-{
+.container{
 	max-width: 1350px;
 	margin: auto;
 }
-.heading
-{
+.heading{
 	height: 50px;
 	display: flex;
 	padding: 2%;
 	align-content: space-between;
 }
-#left-heading
-{
+#left-heading{
 	width:100px;
 	padding: 0;
 	font-size: 20px;
 	text-align: center;
 	margin-left:6%;
 }
-#cntr-heading
-{
+#cntr-heading{
 	margin: 0 auto;
 	width:400px;
 }
-.heading-a
-{
+.heading-a{
 	text-decoration: none;
 	color: #000000;
 }
-#right-heading
-{
+#right-heading{
 	width: 150px;
 	margin-right: 4%;
 }
-.search-icons
-{
+.search-icons{
 	font-size: 15px
 }
-.menu-icons
-{
+.menu-icons{
 	font-size: 15px
 }
-.heading-ul
-{
+.heading-ul{
 	list-style-type: none;
 }
 .heading-li{
@@ -62,16 +52,14 @@ body
 .navbar{
     display: none;
 }
-.center-banner
-{
+.center-banner{
 	position: relative;
 	width: 100%;
 	padding: 0;
 	margin: 0;
 	background-position: center;
 }
-#square-box
-{
+#square-box{
 	background: #61727B;
 	position: absolute;
 	top: 125px;
@@ -82,22 +70,19 @@ body
 	margin: 0;
 	z-index: 3;
 }
-#caption1
-{
+#caption1{
 	font-size: 30px;
 	margin-left: 80px;
 	margin-right: 80px;
 	margin-top: 10%;
 }
-#sub1
-{
+#sub1{
 	font-size: 15px;
 	margin-left: 80px;
 	margin-right: 80px;
 	margin-bottom: 10%;
 }
-.squares
-{
+.squares{
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
@@ -113,8 +98,7 @@ body
 	z-index: 1;
 	margin: 0;
 }
-.center-image
-{
+.center-image{
 	width: 70%;
 	height: 70%;
 	margin-left: 15%;
@@ -125,148 +109,123 @@ body
 	z-index: 2;
 	position: relative;
 }
-.icon-squre
-{
+.icon-squre{
 	background: #61727B;
 	position: absolute;
-	/* float: right; */
 	left: 950px;
 	width: 100px;
 	height: 100px;
 	z-index: 3;
 }
-#down-arrow-icon
-{
+#down-arrow-icon{
 	color: white;
 	margin-left: 40%;
 	margin-top: 30%;
 	font-size: 40px;
 	font-weight: lighter;
 }
-.service
-{
+.service{
 	padding-top: 5%;
 	display: flex;
 	gap: 50px;
 
 }
-.line
-{
+.line{
 	border: 2px solid #61727B;
 	width: 10%;
 	margin-top: 55px;
 	height: 0;
 }
-#caption2
-{
+#caption2{
 	display: block;
 	width: 30%;
 	font-size: 30px;
 }
-#service-icon1
-{
+#service-icon1{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
-#service-icon2
-{
+#service-icon2{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
-#service-icon3
-{
+#service-icon3{
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
 }
-.service-para-icon1
-{
+.service-para-icon1{
 	width: 50px;
 	height: 50px;
 	margin-top: 20px;
 	
 }
-.service-para-icon2
-{
+.service-para-icon2{
 	width: 50px;
 	height: 50px;
 	margin-top: 6px;
 }
-.service-para-icon3
-{
+.service-para-icon3{
 	width: 50px;
 	height: 50px;
 	margin-top: 20px;
 }
-#service-para-icon2
-{
+#service-para-icon2{
 	width: 100%;
 	height: 100%;  
 }
-#service-para-icon3
-{
+#service-para-icon3{
 	width: 100%;
 	height: 100%;
 }
-.service-icons
-{
+.service-icons{
 	display: flex;
 	gap: 20px;
 	width: 30%;
 }
-.service-para
-{
+.service-para{
 	display: flex;
 	text-align: left;
 	padding-bottom: 10%;
 }
-.service-para-subdiv
-{
+.service-para-subdiv{
 	display: block;
 }
-.p1
-{
+.p1{
 	font-size: 24px;
 	font-weight: 100px;
 	display: block;
 }
-.quality-para
-{
+.quality-para{
 	font-size: 15px;
 	width: 60%;
 	display: inline-block;
 }
-.shiping-para
-{
+.shiping-para{
 	font-size: 15px;
 	width: 60%;
 	display: inline-block;
 }
-.warranty-para
-{
+.warranty-para{
 	font-size: 15px;
 	width: 70%;
 	display: inline-block;
 }
-.exp-nmbr
-{
+.exp-nmbr{
 	display: flex;
 	gap: 100px;
 }
-#imgexp
-{
+#imgexp{
 	width: 100%;
 	height: 100%;
 }
-.image-experience-number
-{
+.image-experience-number{
 	width: 40%;
 	height: 40%;
 }
-#Experience-paragraph
-{
+#Experience-paragraph{
 	width: 25%;
 }
 #experience-heading{
@@ -276,38 +235,32 @@ body
 	width: 70%;
 	
 }
-#experience-para
-{
+#experience-para{
 	font-size: 18px;
 	font-weight: 300;
 	display: block;
 	width: 150%;
 }
-.sub-exp-details
-{
+.sub-exp-details{
 	margin-left: 15%;
 }
-.sub-exp
-{
+.sub-exp{
 	display: flex;
 	padding: 4%;
 	justify-content: space-between;
 	width: 100%;
 }
-.numbers
-{
+.numbers{
 	font-size: 60px;
 	font-weight: 600;
 	color: #61727B;
 }
-.btn-learn
-{
+.btn-learn{
 	padding: 2%;
 	background: transparent;
 	border-color: #61727B;
 }
-#btn-arrow
-{
+#btn-arrow{
 	font-size:36px;
 	position: relative; 
 	left:-10px;
@@ -320,12 +273,10 @@ body
 	padding-bottom: 30px;
 	padding-top: 100px;
 }
-.caption-exp
-{
+.caption-exp{
 	display: inline-block;
 }
-.experienceList-caption
-{
+.experienceList-caption{
 	width: 30%;
 	height: 30%;
 	display:block;
@@ -380,7 +331,7 @@ body
 .item:last-child::before {
     height: 0;
 }  
-.content {
+.content{
     margin-left: 60px;
     margin-top: -70px;
 }
@@ -388,13 +339,11 @@ body
 	width: 70%;
 	height: 50%;
 }
-#img2
-{
+#img2{
 	width: 100%;
 	height: 100%;
 }
-.customers
-{
+.customers{
 	display: flex;
 	padding: 0;
 }
@@ -404,95 +353,80 @@ body
 	display: block;
 	width: 65%;
 }
-#arrows
-{
+#arrows{
 	display: flex;
 	width: 5%;
 	height: 8%;
 	margin-top: 40px;
 	margin-left: 700px;
 }
-#left-arrow
-{
+#left-arrow{
 	color: rgb(195, 195, 195);
 	margin: 30%;
 	font-size: 40px;
 	font-weight: lighter;
 }
-#right-arrow
-{
+#right-arrow{
 	color: #61727B;
 	margin: 30%;
 	font-size: 40px;
 	font-weight: lighter;
 }
-.testimnl
-{
+.testimnl{
 	display: flex;
 	justify-content: space-evenly;
 	padding-top: 2%;
 }
-.quote-icon
-{
+.quote-icon{
 	color: white;
 }
-.quote-icon-testi2
-{
+.quote-icon-testi2{
 	color: white;
 }
-.testi-one
-{
+.testi-one{
 	background: #61727B;
 	color: white;
 	width: 35%;
 	height: 40%;
 	padding: 3%;
 }
-.testi-two
-{
+.testi-two{
 	background: #61727B;
 	color: white;
 	width: 35%;
 	height: 40%;
 	padding: 3%;
 }
-.testi-para
-{
+.testi-para{
 	font-size:15px;
 }
-.testi-para-head
-{
+.testi-para-head{
 	font-size: 30px;
 }
-.testimnl-profile
-{
+.testimnl-profile{
 	display: flex;
 }
 .testimnl-profile-img1{
 	height: 40px;
 	border-radius: 20px;
 }
-.testimnl-profile-img2
-{
+.testimnl-profile-img2{
 	height: 40px; 
 	border-radius: 20px;
 }
-.testi-name
-{
+.testi-name{
 	font-size:20px
 }
 .testimnl-profile-para{
 	margin-top: 0;
 	font-size:15px
 }
-.subscribe
-{
+.subscribe{
 	margin-left: 35%;
 	width: 40%;
 	padding: 0%;
 }
-#sub-p-head
-{
+#sub-p-head{
 	font-size: 30px;
 	text-align: center;
 	display: block;
@@ -500,15 +434,13 @@ body
 	margin: 0;
 	padding-top: 50px;
 }
-#sub-p
-{
+#sub-p{
 	font-size: 15px;
 	text-align: center;
 	display: block;
 	width: 75%;
 }
-.search
-{
+.search{
 	position: relative;
 	left: 400px;
 	top: 30px;
@@ -520,21 +452,18 @@ body
 	border: 1px solid white ;
 	box-shadow: 0px -3px 10px 0px #d2d1d1;
 }
-#search-para
-{
+#search-para{
 	margin-left:15px;
 	margin-top:20px;
 	display: block;
 	width: 100%;
 }
-#email
-{
+#email{
 	border: none;
 	width: 80%;
 	padding-left: 15px;
 }
-#button
-{
+#button{
 	background:#61727B;
 	border: none;
 	margin-right:5px;
@@ -544,8 +473,7 @@ body
 	height: 20%;
 	color: white;
 }
-.contact
-{
+.contact{
 	background: #61727B;
 	text-decoration: none;
 	color: white;
@@ -553,90 +481,71 @@ body
 	display: flex;
 	padding: 5% 5% 2% 0%;
 }
-#company-about
-{
+#company-about{
 	width: 30%;
 	line-height: 25px;
 	margin-left: 10%;
 	flex: 3;
 }
-#company-about-para
-{
+#company-about-para{
 	font-size: 15px;
 	display: block;
 	width: 40%;
 }
-#about
-{
+#about{
 	flex: 1;
 }
-#company
-{
+#company{
 	width: 10%;
 	flex: 1px;
 }
-#support
-{
+#support{
 	width: 10%;
 	flex: 1;
 }
-#get-touch
-{
+#get-touch{
 	width: 15%;
 	flex: 1;
 }
-#get-touch-para
-{
+#get-touch-para{
 	font-size: 15px;
 	line-height: 25px;
 	margin-top: 35px;
 	flex: 1;
 }
-.contact-list
-{
+.contact-list{
 	list-style-type: none;
 	padding: 0;
 }
-.contact-sublist
-{
+.contact-sublist{
 	font-size: 15px;
 }
-.contact-heading
-{
+.contact-heading{
 	font-size: 20px;
 	font-weight: 600;
 }
-#social-media
-{
+#social-media{
 	display: flex;
 }
-.social-media-space
-{
+.social-media-space{
 	margin-left:30px
 }
-.social-app
-{
+.social-app{
 	text-decoration: none;
 	color: white;
 }
-.insta-icon
-{
+.insta-icon{
 	font-size: 15px;
 }
-.facebook-icon
-{
+.facebook-icon{
 	font-size: 15px;
 }
-.twitter-icon
-{
+.twitter-icon{
 	font-size: 15px;
 }
-/* 
--------------------
+/* -------------------
  Responsive website
--------------------
- */
-
+-------------------*/
 @media (max-width:2560px)
 {
 	.squares
