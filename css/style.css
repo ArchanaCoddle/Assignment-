@@ -19,10 +19,12 @@ body{
 	font-size: 20px;
 	text-align: center;
 	margin-left:6%;
+	/* flex:1; */
 }
 #cntr-heading{
-	margin: 0 auto;
+	margin:  auto;
 	width:400px;
+	/* flex: 5; */
 }
 .heading-a{
 	text-decoration: none;
@@ -31,6 +33,7 @@ body{
 #right-heading{
 	width: 150px;
 	margin-right: 4%;
+	/* flex: 1; */
 }
 .search-icons{
 	font-size: 15px
@@ -47,7 +50,7 @@ body{
 }
 .heading-icon{
 	display: inline-block;
-	padding-left: 13%;
+	padding-left: 10%;
 }
 .navbar{
     display: none;
@@ -82,53 +85,49 @@ body{
 	margin-right: 80px;
 	margin-bottom: 10%;
 }
-.squares{
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0;
-	position: absolute;
-	margin-left: -3%;
-	margin-top: -5%;
-}
-.empty-squre{
-	border: 3px solid #61727B;
-	background: transparent;
-	width: 100px;
-	height: 100px;
-	z-index: 1;
-	margin: 0;
-}
 .center-image{
 	width: 70%;
 	height: 70%;
-	margin-left: 15%;
+	margin-left: 13%;
+	margin-right: 0;
+	position: relative;
+	z-index: 2;
 }
 #img1{
 	height: 100%;
 	width: 100%;
-	z-index: 2;
 	position: relative;
 }
-.icon-squre{
-	background: #61727B;
-	position: absolute;
-	left: 950px;
+.center-image::before{
+	content: "  ";
+	border: 3px solid #61727B;
+	background: transparent;
 	width: 100px;
 	height: 100px;
-	z-index: 3;
+	padding: 45px;
+	position: relative;
+	left: 35px;
+	top: -15px;
+	z-index: 0;
 }
-#down-arrow-icon{
-	color: white;
-	margin-left: 40%;
-	margin-top: 30%;
-	font-size: 40px;
-	font-weight: lighter;
+.center-image::after{
+	position: absolute;
+	left: 102%;
+	bottom: 0;
+    font: normal normal normal 35px FontAwesome; 
+    content: '\f175';
+    background: #61727B;
+    color: white;
+    width: 100px;
+    height: 100px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .service{
 	padding-top: 5%;
 	display: flex;
 	gap: 50px;
-
 }
 .line{
 	border: 2px solid #61727B;
@@ -156,62 +155,26 @@ body{
 	height: 100%;
 	object-fit: contain;
 }
-.service-para-icon1{
+.service-para-icon{
 	width: 50px;
 	height: 50px;
-	margin-top: 20px;
-	
-}
-.service-para-icon2{
-	width: 50px;
-	height: 50px;
-	margin-top: 6px;
-}
-.service-para-icon3{
-	width: 50px;
-	height: 50px;
-	margin-top: 20px;
-}
-#service-para-icon2{
-	width: 100%;
-	height: 100%;  
-}
-#service-para-icon3{
-	width: 100%;
-	height: 100%;
 }
 .service-icons{
 	display: flex;
-	gap: 20px;
-	width: 30%;
+	gap: 30px;
+	width: 25%;
 }
 .service-para{
 	display: flex;
-	text-align: left;
+	gap: 70px;
 	padding-bottom: 10%;
-}
-.service-para-subdiv{
-	display: block;
 }
 .p1{
 	font-size: 24px;
 	font-weight: 100px;
-	display: block;
 }
-.quality-para{
+.service-paragraph{
 	font-size: 15px;
-	width: 60%;
-	display: inline-block;
-}
-.shiping-para{
-	font-size: 15px;
-	width: 60%;
-	display: inline-block;
-}
-.warranty-para{
-	font-size: 15px;
-	width: 70%;
-	display: inline-block;
 }
 .exp-nmbr{
 	display: flex;
@@ -233,7 +196,6 @@ body{
 	font-weight: 700;
 	display: block;
 	width: 70%;
-	
 }
 #experience-para{
 	font-size: 18px;
@@ -374,7 +336,7 @@ body{
 }
 .testimnl{
 	display: flex;
-	justify-content: space-evenly;
+	gap: 20px;
 	padding-top: 2%;
 }
 .quote-icon{
@@ -386,15 +348,11 @@ body{
 .testi-one{
 	background: #61727B;
 	color: white;
-	width: 35%;
-	height: 40%;
 	padding: 3%;
 }
 .testi-two{
 	background: #61727B;
 	color: white;
-	width: 35%;
-	height: 40%;
 	padding: 3%;
 }
 .testi-para{
@@ -473,13 +431,15 @@ body{
 	height: 20%;
 	color: white;
 }
-.contact{
+.footer{
 	background: #61727B;
-	text-decoration: none;
-	color: white;
 	width: auto;
+}
+.contact{
 	display: flex;
 	padding: 5% 5% 2% 0%;
+	color: white;
+	text-decoration: none;
 }
 #company-about{
 	width: 30%;
@@ -546,630 +506,400 @@ body{
 /* -------------------
  Responsive website
 -------------------*/
-@media (max-width:2560px)
-{
-	.squares
-	{
-		top: 700px;
-	}
-}
-@media (max-width:1496px)
-{
-	.squares
-	{
-		top: 700px;
-	}
-}
-@media (max-width:1200px)
-{
-	.squares
-	{
-		top: 600px;
-	}
-	.icon-squre
-	{
-		left: 800px;
-	} 
-	#arrows
-	{
-		margin-left: 500px;
-	}
-}
-@media (max-width:1024px)
-{
-	#right-heading
-	{
+@media (max-width:1024px){
+	#right-heading{
 		margin-right: 3%;
 	}
-	#square-box
-	{
+	#square-box{
 		top: 70px;
 		left: 0px;
 		width: 360px;
 		height: 250px;
 	}
-	#caption1
-	{
+	#caption1{
 		font-size: 16;
 	}
-	#sub1
-	{
+	#sub1{
 		font-size: 12px;
 	}
-	.squares
-	{
-		top: 510px;
-		left: 150px;
-	}
-	.icon-squre
-	{
-		left: 700px;
-	} 
-	.line
-	{
+	.line{
 		margin-left: 60px;
 	}
-	#caption2 
-	{
+	#caption2 {
 		width: 35%;
 	}
-	.service-para
-	{
+	.service-para{
 		justify-content: space-evenly;
 		margin-left: 20px;
 	}
-	.service-para-subdiv
-	{
+	.service-para-subdiv{
 		padding-left: 10px;
 		width: 50%;
 	} 
-	.quality-para
-	{
+	.quality-para{
 		font-size: 15px;
 		width: 80%;
 	}
-	.shiping-para
-	{
+	.shiping-para{
 		font-size: 15px;
 		width: 80%;
 	}
-	.warranty-para
-	{
+	.warranty-para{
 		font-size: 15px;
 		width: 85%;
 	}
-	#service-para-icon2
-	{
+	#service-para-icon2{
 		margin-left: 15px;
 	}
-	#service-para-icon3
-	{
+	#service-para-icon3{
 		margin-left: 15px;
 	}
-	#Experience-paragraph
-
-	{
+	#Experience-paragraph{
 		width: 40%;
 	}
-	#experience-heading
-	{
+	#experience-heading{
 		width: 75%;
 	}
-	#experience-para
-	{
+	#experience-para{
 		width: 100%;
 	}
-	.exp-nmbr
-	{
+	.exp-nmbr{
 		margin-left: 45px;
 		gap: 50px;
 	}
-	.caption-exp
-	{
+	.caption-exp{
 		width: 45%;
 	}
-	.experienceList
-	{
+	.experienceList{
 		margin-left: 40px;
 	}
-	.experienceList-h2
-	{
+	.experienceList-h2{
 		display: block;
-		width: 65%;
+		width: 74%;
 	}
-	.imgdiv2
-	{
+	.imgdiv2{
 		width: 50%;
 		height: 50%;
 	}
-	.customers
-	{
+	.customers{
 		margin-left: 40px;
 	}
-	#arrows
-	{
+	#arrows{
 		margin-left: 350px;
 	}
-	.testi-one
-	{
-		width: 38%;
+	.testimnl{
+		margin-left: 3%;
+		margin-right: 3%;
 	}
-	.testi-two
-	{
-		width: 38%;
-	}
-	.testi-para
-	{
+	.testi-para{
 		width: 90%;
 		font-size: 11px;
 	}
-	.testi-para-head
-	{
+	.testi-para-head{
 		font-size: 25px;
 	}
-	.subscribe
-	{
-		width: 50%;
+	.subscribe{
+		width: 52%;
 		margin-left: 300px;
 	}
-	#sub-p
-	{
+	#sub-p{
 		width: 80%;
 	}
-	.search
-	{
+	.search{
 		left: 250px;
 		max-width: 50%;
 	}
-	#company-about
-	{
+	#company-about{
 		
 		padding-left: 0;
 		padding-right: 0;
 	}
-	#company-about-para
-	{
+	#company-about-para{
 		font-size: 12px;
 		width: 90%;
 	}
-	#about
-	{
+	#about{
 		margin-left: 3%;
 		padding: 1%;
 	}
-	#company
-	{
+	#company{
 		margin-left: 3%;
 		width: 13%;
 	}
-	#support
-	{
+	#support{
 		margin-left: 3%;
 		width: 13%;
 	}
-	#get-touch
-	{
+	#get-touch{
 		margin-top: 0px;
 		margin-left: 3%;
 		width: 18%;
 	}
 }
-@media(max-width:900px)
-{
-	.squares
-	{
-		top: 450px;
-		left: 120px;
-	}
-	.icon-squre
-	{
-		left: 600px;
-	} 
-	.experienceList-h2
-	{
-		width: 74%;
-	}
-	.subscribe {
-		width: 51%;
-	}
-}
-@media(max-width:995px)
-{
-	#caption1 , #sub1
-	{
+@media(max-width:995px){
+	#caption1 , #sub1{
 		margin-left: 55px;
 	}
-	#caption2
-	{
+	#caption2{
 		width: 40%;
 	}
-	.service-para-subdiv
-	{
+	.service-para-subdiv{
 		width: 100%;
 	}
-	.p1
-	{
+	.p1{
 		font-size: 20px;
 	}
-	#experience-heading
-	{
+	#experience-heading{
 		width: 100%;
 	}
 	.numbers{
 		font-size: 50px;
 	}
-	.expernce
-	{
+	.expernce{
 		margin-left: 50px;
 	}
-	#exp-p
-	{
+	#exp-p{
 		width: 100%;
 	}
-	.exp-head
-	{
+	.exp-head{
 		font-size: 17px;
 	}
-	#exp-p-sub
-	{
+	#exp-p-sub{
 		font-size: 14px;
 	}
-	.imgdiv2
-	{
+	.imgdiv2{
 		margin-top: 200px;
 	}
-	#img2
-	{
+	#img2{
 		width: 100%;
 		height: 100%;
 	}
-	#arrows
-	{
-		margin-left: 100px;
+	#arrows{
+		margin-left: 200px;
 	}
 }
-@media(max-width:820px)
-{
-	.icon-squre
-	{
-		left: 480px;
-	}
-}
-@media(max-width:780px)
-{
-	#caption1 , #sub1
-	{
+@media(max-width:780px){
+	#caption1 , #sub1{
 		margin-left: 55px;
 	}
-	.squares
-	{
-		left: 100px;
-		top: -0pxpx;
-		margin-left: 0;
-	}
-	.icon-squre
-	{
-		left: 480px;
-	}
-	#caption2
-	{
+	#caption2{
 		width: 40%;
 	}
-	.service-para-subdiv
-	{
+	.service-para-subdiv{
 		width: 100%;
 	}
-	.p1
-	{
+	.p1{
 		font-size: 20px;
 	}
-	#experience-heading
-	{
+	#experience-heading{
 		width: 100%;
 	}
 	.numbers{
 		font-size: 50px;
 	}
-	.expernce
-	{
+	.expernce{
 		margin-left: 50px;
 	}
-	#exp-p
-	{
+	#exp-p{
 		width: 100%;
 	}
-	.exp-head
-	{
+	.exp-head{
 		font-size: 17px;
 	}
-	#exp-p-sub
-	{
+	#exp-p-sub{
 		font-size: 11px;
 	}
-	.imgdiv2
-	{
+	.imgdiv2{
 		margin-top: 60px;
 	}
-	#img2
-	{
+	#img2{
 		width: 100%;
 		height: 100%;
 	}
-	#arrows
-	{
+	#arrows{
 		margin-left: 100px;
 	}
-	.testi-para-head
-	{
+	.testi-para-head{
 		font-size: 24px;
 	}
-	.contact
-	{
+	.subscribe{
+		margin-left: 24%;
+		width: 70%;
+	}
+	.search{
+		max-width: 71%;
+		left: 115px;
+	}
+	.contact{
 		display: block;
 		text-align: center;
 		padding: 0;
 	}
-	#company-about
-	{
-		padding-left: 250px;
+	#company-about{
+		padding-left: 130px;
 		width: 60%;
 		padding-top: 10%;
 	}
-	#about
-	{
+	#about{
 		margin-top: 5%;
 	}
-	#company
-	{
+	#company{
 		margin-top: 5%;
 		margin-left: 30%;
 		width: 40%;
 	}
-
-	#support
-	{
+	#support{
 		margin-top: 5%;
 		margin-left: 30%;
 		width: 40%;
 	}
-	#get-touch
-	{
+	#get-touch{
 		margin-top: 5%;
 		margin-left: 30%;
 		width: 40%;
 	}
-	#get-touch-para
-	{
+	#get-touch-para{
 		margin-top: 5%;
 	}
-	.contact-sublist
-	{
+	.contact-sublist{
 		padding-top: 2%;
 	}
-	#social-media
-	{
+	#social-media{
 		margin-left: 100px;
 	}
 }
-@media(max-width:768px)
-{
-	#cntr-heading
-	{
+@media(max-width:768px){
+	#cntr-heading{
 		margin-left: 40px;
 	}
-	#square-box
-	{
+	#square-box{
 		top: 20px;
 		width: 290px;
 		height: 200px;
 		padding: 0;
 	}
-	#caption1
-	{
+	#caption1{
 		font-size: 20px;
 		margin-left: 60px;
 	}
-	#sub1
-	{
+	#sub1{
 		font-size: 11px;
 		margin-left: 60px;
 		line-gap-override: 4px;
 		display: block;
 		width: 65%;
 	}
-	.squares
-	{
-		left: 80px;
-		top: 350px;
-	}
-	.icon-squre
-	{
-		left: 500px;
-	}
-	#caption2
-	{
+	#caption2{
 		width: 50%;
 	}
-	.service-para
-	{
+	.service-para{
 		display: block;
 		margin-left: 60px;
 	}
-	.service-para-subdiv
-	{
+	.service-para-subdiv{
 		width: 100%;
 	}
 	.p1{
 		width: 100%;
 	}
-	.service-icons
-	{
+	.service-icons{
 		width: 80%;
 	}
-	#service-para-icon1
-	{
-		width:30px;
-		height:30px;
-	}
-	#service-para-icon2
-	{
-		width:40px;
-		height:40px;  
-		margin: 0;
-	}
-	#service-para-icon3
-	{
-		width:30px;
-		height:30px;
-		margin: 0;
-	}
-	.exp-nmbr
-	{
+	.exp-nmbr{
 		display: inline;
 		padding: 0;
 	}
-	.image-experience-number
-	{
+	.image-experience-number{
 		width: 60%;
 		height: 60%;
 		padding-left: 80px;
 	}
-	#Experience-paragraph
-	{
+	#Experience-paragraph{
 		margin-top: 10%;
 		width: 50%;
 		margin-left: 70px;
 	}
-	#experience-heading
-	{
+	#experience-heading{
 		width: 90%;
 	}
-	.caption-exp
-	{
+	.caption-exp{
 		width: 90%;
 		margin-top: 55px;
 	}
-	.experienceList
-	{
+	.experienceList{
 		margin-left: 60px;
 		display: inline;
 	}
-	.imgdiv2
-	{
+	.imgdiv2{
 		margin-left: 60px;
 		width: 65%;
 		height: 60%;
 	}
-	#arrows
-	{
-		margin-left: 100px;
-	}
-	.testimnl
-	{
+	.testimnl{
 		display: inline;
 	}
-	.testi-one
-	{
+	.testi-one{
 		width: 70%;
 		margin-left: 10%;
 	}
-	.testi-two
-	{
+	.testi-two{
 		width: 70%;
 		margin-left: 10%;
 		margin-top: 5%;
 	}
-	.testi-para
-	{
+	.testi-para{
 		font-size: 15px;
 	}
-	.subscribe
-	{
-		margin-left: 24%;
-		width: 70%;
-	}
-	.search
-	{
-		max-width: 71%;
-		left: 115px;
-	}
-	.contact
-	{
-		display: block;
-		text-align: center;
-		padding: 0;
-	}
-	#company-about
-	{
-		padding-left: 115px;
-		width: 60%;
-		padding-top: 10%;
-	}
-	#about
-	{
-		margin-top: 5%;
-	}
-	#company
-	{
-		margin-top: 5%;
-		margin-left: 30%;
-		width: 40%;
-	}
-	#support
-	{
-		margin-top: 5%;
-		margin-left: 30%;
-		width: 40%;
-	}
-	#get-touch
-	{
-		margin-top: 5%;
-		margin-left: 30%;
-		width: 40%;
-	}
-	#get-touch-para
-	{
-		margin-top: 5%;
-	}
-	.contact-sublist
-	{
-		padding-top: 2%;
-	}
-	#social-media
-	{
-		margin-left: 100px;
-	}
 }
-@media (max-width:636px)
-{
-	#cntr-heading
-	{
+@media (max-width:636px){
+	#cntr-heading{
 		margin-left: 0;
 	}
-	.squares
-	{
-		left: 50px;
-		top: 280px;
+	.heading-ul{
+		padding-left: 35px;
 	}
-	.icon-squre
-	{
-		left: 400px;
+	#arrows{
+		margin-left: 10px;
 	}
-
-	#arrows
-	{
-		margin-left: 40px;
-	}
-	
 }
-@media (max-width: 450px)
-{
-	.heading
+@media(max-width:500px){
+	#cntr-heading
 	{
+		position: absolute;
+		top: 8%;
+		left: 87px
+	}
+	#right-heading {
+		margin-right: 3%;
+		margin-left: 55%;
+	}
+	.center-image {
+		margin-left: 2%;
+		margin-top: 5%;
+	}
+	#square-box {
+		top: 0px;
+		width: 263px;
+		height: 185px;
+	}	
+	.caption-exp {
+		width: 81%;
+	}
+	#arrows {
+		margin-left: -78px;
+	}
+	.search {
+		left: 80px;
+	}
+	#company-about {
+		padding-left: 73px;
+	}		
+}
+@media (max-width: 450px){
+	.heading{
 		display: none;
 	}
-	.navbar 
-	{
+	.navbar {
         height: 60px;
         padding: 10px 10px;
         padding-left: 10px;
@@ -1177,31 +907,26 @@ body{
         align-items: center;
         justify-content: space-between;
     }
-    .heading-captn
-	{
+    .heading-captn{
         font-size: 20px;
         padding: 5px 6px;
     }
-	#menu
-	{
+	#menu{
 		visibility: hidden;
 	}
-    .main-menu 
-	{
+    .main-menu {
 		width: 15%;
         position: relative;
         z-index: 4;
     }
-    .dropdown-a
-	{
+    .dropdown-a{
         color: #ffffff; 
         font-size: 18px;
         padding: 5px 6px;
         cursor: pointer;
 		text-decoration: none;
     }
-    .dropdown-content 
-	{
+    .dropdown-content {
        display: none;
        position: absolute;
        background: #61727B;
@@ -1209,119 +934,94 @@ body{
        right: 1px;
        padding: 0px 20px;
     }
-    .dropdown-ul
-	{
+    .dropdown-ul{
        list-style-type: none;
        padding: 0;
        margin: 0;
     } 
-    .dropdown-li 
-	{
+    .dropdown-li {
        padding: 20px 0;
 	   border-top: 1px solid rgb(177, 177, 177);
 	   text-decoration: none;
     }
-    .menu:checked ~ .dropdown-content 
-	{
+    .menu:checked ~ .dropdown-content {
        display: block;
     }
-	.close-option
-	{
+	.close-option{
 		float: right;
 	}
-	#close-icon
-	{
+	#close-icon{
 		color: #ffffff;
-	}
-	.icon-squre
-	{
-		left: 20px;
-	}
-	.squares
-	{
-		visibility: hidden;
 	}
 	#img1{
 		left: 20px;
 		top: 0px;
 	}
-	.center-image
-	{
+	.center-image{
 		width: 90%;
 		height: 80%;
 		margin-left: 0;
+		&::before,&::after{
+			display: none;
+		}
 	}
-	#caption1
-	{
+	#caption1{
 		display: block;
 		width: 60%;
 		font-size: 25px;
 		margin-left: 30px;
 	}
-	#sub1
-	{
+	#sub1{
 		font-size: 15px;
 		margin-left: 30px;
 		text-align: justify;
 	}
-	#square-box
-	{
+	#square-box{
 		width: 90%;
 		height: 80%;
 		top: 300px;
 		left: 20px;
 	}
-	.service
-	{
+	.service{
 		padding-top: 270px;
 		margin-left: 20px;
 		gap: 0;
 	}
-	.line
-	{
+	.line{
 		margin-left: 10px;
 		width: 50px;
 	}
-	#caption2
-	{
+	#caption2{
 		display: block;
 		width: 70%;
 		font-size: 25px;
 		margin-left: 20px;
 	}
-	.service-para
-	{
+	.service-para{
 		margin-left: 40px;
 	}
-	.service-para-subdiv
-	{
+	.service-para-subdiv{
 		max-width: 85%;
 	}
-	.service-icons
-	{
+	.service-icons{
 		width: 80%;	
 		gap: 0;
 	}
-	#service-para-icon1
-	{
+	#service-para-icon1{
 		margin-left: 0;
 	}
-	#service-para-icon2
-	{
+	#service-para-icon2{
 		margin-left: -10px;
 	}
-	#service-para-icon3
-	{
+	#service-para-icon3{
 		margin-left: -10px;
 	}
-	.image-experience-number
-	{
+	.image-experience-number{
 		width: 80%;
 		height: 80%;
 		padding-left: 30px;
 	}
-	#Experience-paragraph
-	{
+	#Experience-paragraph{
 		margin-left: 5%;
 		margin-top: 80px;
 		width: 85%;
@@ -1329,416 +1029,312 @@ body{
 	.experienceList-h2 {
 		width: 85%;
 	}
-	#experience-heading
-	{
+	#experience-heading{
 		font-size: 25px;
 		width: 80%;
 	}
-	#experience-para
-	{
+	#experience-para{
 		font-size: 15px;
 		width: 85%;
 	}
-	.numbers
-	{
+	.numbers{
 		font-size: 38px;
 	}
-	.caption-exp
-	{
+	.caption-exp{
 		width: 80%;
 	}
-	.experienceList
-	{
+	.experienceList{
 		margin-left: 20px;
 	}
-	.content-p
-	{
+	.content-p{
 		width: 80%;
 	}
-	.imgdiv2
-	{
+	.imgdiv2{
 		margin-left: 20px;
 		margin-top: 25px;
 		width: 90%;
 		height: 80%;
 	}
-	#img2
-	{
+	#img2{
 		width: 100%;
 		height: 80%;
 	}
-	.customers
-	{
+	.customers{
 		margin-left: 20px;
 	}
-	.customers-head
-	{
+	.customers-head{
 		width: 100%;
 		margin: 0;
 		padding: 0;
 	}
-	#cus-p
-	{
+	#cus-p{
 		margin-left: 0;
 		padding: 0;
 	}
-	#arrows
-	{
+	#arrows{
 		margin-left: -100px;
 	}
-	#left-arrow
-	{
+	#left-arrow{
 		font-size: 20px;
 	}
-	#right-arrow
-	{
+	#right-arrow{
 		font-size: 20px;
 	}
-	.testi-one
-	{
+	.testi-one{
 		margin-left: 20px;
 		width: 85%;
 	}
-	.testi-two
-	{
+	.testi-two{
 		margin-left: 20px;
 		width: 85%;
 	}
-	.testi-para-head
-	{
+	.testi-para-head{
 		font-size: 20px;
 		display: block;
 		width: 80%;
 		height: 70%;
 	}
-	.testi-para
-	{
+	.testi-para{
 		font-size: 15px;
 	}
-	.testi-name
-	{
+	.testi-name{
 		font-size: 15px;
 	}
-	.testimnl-profile-para
-	{
+	.testimnl-profile-para{
 		font-size: 11px;
 	}
-	#sub-p-head
-	{
+	#sub-p-head{
 		font-size: 22px;
 	}
-	#sub-p
-	{
+	#sub-p{
 		font-size: 10px;
 	}
-	.search
-	{
+	.search{
 		max-width: 90%;
 		display: flex;
 		left: 17px;
 	}
-	#search-para
-	{
+	#search-para{
 		font-size: 8px;
 	}
-	#button
-	{
+	#button{
 		font-size: 10px;
 		margin-left: 0px;
 	}
-	#company-about
-	{
+	#company-about{
 		width: 60%;
 		padding-left: 58px;
 	}
-	#company-about-para
-	{
+	#company-about-para{
 		margin-right: 0;
 	}
-	#social-media
-	{
+	#social-media{
 		margin-left: 50px;
 	}	
 }
-@media (max-width: 380px)
-{
-	#cntr-heading
-	{
+@media (max-width: 380px){
+	#cntr-heading{
 		left: 30px;
 	}
-	#right-heading
-	{
+	#right-heading{
 		margin-left: 200px;
 	}
-	.center-image
-	{
+	.center-image{
 		width: 90%;
 		height: 70%;
 		margin: 0;
 	}
-	#img1
-	{
+	#img1{
 		left: 20px;
 		top: 0px;
 	}
-	.squares
-	{
-		visibility: hidden;
-	}
-	.icon-squre
-	{
-		left: 50px;
-	}
-	#square-box
-	{
+	#square-box{
 		top: 270px;
 		left: 20px;
 		width: 90%px;
-		height: 200px;
+		height: 230px;
 	}
-	#caption1
-	{
+	#caption1{
 		padding-top: 2%;
 		font-size: 24px;
 	}
-	#sub1
-	{
+	#sub1{
 		font-size: 14px;
 	}
-	.line
-	{
+	.line{
 		margin-left: 15px;
 	}
-	#caption2
-	{
+	#caption2{
 		font-size: 20px;
 	}
-	.service
-	{
+	.service{
 		padding-top: 250px;
 	}
-	.service-para
-	{
+	.service-para{
 		margin-left: 30px;
 		width: 90%;
 	}
-	.p1
-	{
+	.p1{
 		font-size: 23px;
 	}
-	.shiping-para
-	{
+	.shiping-para{
 		display: inline;
 		width: 90%;
 	}
-	.warranty-para
-	{
+	.warranty-para{
 		display: inline;
 		width: 90%;
 	}
-	.image-experience-number
-	{
+	.image-experience-number{
 		width: 80%;
 		height: 80%;
 	}
-	#imgexp
-	{
+	#imgexp{
 		margin-left: 20px;
 		margin-top: 10px;
 	}
-	#experience-heading
-	{
+	#experience-heading{
 		width: 100%;
 	}
-	#Experience-paragraph
-	{
+	#Experience-paragraph{
 		margin-left: 20px;
 	}
-	#experience-para
-	{
+	#experience-para{
 		width: 90%;
 	}
 	.sub-exp{
 		padding-left: 10px;
 		margin-left: -8px;
 	}
-	#numbers
-	{
+	#numbers{
 		font-size: 20px;
 	}
-	.caption-exp
-	{
+	.caption-exp{
 		width: 90%;
 	}
-	.experienceList-h2
-	{
+	.experienceList-h2{
 		padding-top: 60px;
 	}
-	#cus-p
-	{
+	#cus-p{
 		font-size: 25px;
 	}
-	#arrows
-	{
+	#arrows{
 		margin-left: -80px;
 		margin-top: 45px;
 	}
-	.testi-one
-	{
-		width: 80%;
-		height: 80%;
-	}
-	.testi-para-head
-	{
+	.testi-para-head{
 		font-size: 22px;
 	}
-	.testi-para
-	{
+	.testi-para{
 		font-size: 14px;
 	}
-	.testi-two
-	{
-		width: 80%;
-		height: 80%;
-	}
-	.testimnl-profile
-	{
+	.testimnl-profile{
 		margin-top: 15px;
 	}
-	.subscribe
-	{
+	.subscribe{
 		width: 85%;
 		margin-left: 50px;
 	}
-	#button
-	{
+	#button{
 		font-size: 12px;
 		padding: 1%;
 		margin-left: 0px;
 	}
-	#company-about
-	{
+	#company-about{
 		margin-left: 40px;
 	}
-	#company-about-para
-	{
+	#company-about-para{
 		width: 80%;
 		
 	}
-	#social-media
-	{
+	#social-media{
 		margin-left: 30px;
 	}
 }
-@media (max-width: 320px)
-{
-	#cntr-heading
-	{
+@media (max-width: 320px){
+	#cntr-heading{
 		left: 5px;
 	}
-	#right-heading
-	{
+	#right-heading{
 		margin-left: 160px;
 	}
-	#square-box
-	{
+	#square-box{
 		left: 20px;
 		top: 230px;
 		width: 80%px;
 	}
-	#sub1
-	{
+	#sub1{
 		font-size: 10px;
 	}
-	.service
-	{
+	.service{
 		padding-top: 250px;
 	}
-	.line
-	{
+	.line{
 		width: 13%;
 		margin-top: 40px;
 	}
-	#caption2
-	{
+	#caption2{
 		padding-left: 3%;
 		font-size: 18px;
 		font-weight: 600;
 	}
-	.service-para-subdiv
-	{
+	.service-para-subdiv{
 		width: 90%;
 		display: inline-block;
 	}
-	.p1
-	{
+	.p1{
 		font-size: 16px;
 		font-weight: 550;
 	}
-	#experience-heading
-	{
+	#experience-heading{
 		font-weight: 600;
 	}
-	#experience-para
-	{
+	#experience-para{
 		font-size: 15px;
 	}
-	.expernce-cont
-	{
+	.expernce-cont{
 		margin-left: -15px;
 	}
-	.numbers
-	{
+	.numbers{
 		font-size: 30px;
 	}
-	.caption-exp
-	{
+	.caption-exp{
 		width: 90%;
 	}
-	#cus-p
-	{
+	#cus-p{
 		font-size: 20px;
 	}
-	.experienceList-h2
-	{
+	.experienceList-h2{
 		font-size: 25px;
 	}
-	#arrows
-	{
+	#arrows{
 		margin-top: 25px;
 	}
-	.testi-para-head
-	{
+	.testi-para-head{
 		font-size: 19px
 	}
-	.testi-para
-	{
+	.testi-para{
 		font-size: 13px;
 	}
 	.subscribe{
 		width: 85%;
 	}
-	#sub-p
-	{
+	#sub-p{
 		font-size: 11px;
 	}
-	#button
-	{
+	#button{
 		margin-left: 0px;
 		padding: 1%;
 	}
-	#company-about
-	{
+	#company-about{
 		margin-top: 20px;
 		margin-left: 7px;
 		width: 75%;
 	}
-	#company-about-para
-	{
+	#company-about-para{
 		font-size: 10px;
 	}
-	#social-media
-	{
+	#social-media{
 		margin-left: 20px;
 	}
 }
