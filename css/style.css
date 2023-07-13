@@ -19,12 +19,10 @@ body{
 	font-size: 20px;
 	text-align: center;
 	margin-left:6%;
-	/* flex:1; */
 }
 #cntr-heading{
 	margin:  auto;
 	width:400px;
-	/* flex: 5; */
 }
 .heading-a{
 	text-decoration: none;
@@ -33,7 +31,6 @@ body{
 #right-heading{
 	width: 150px;
 	margin-right: 4%;
-	/* flex: 1; */
 }
 .search-icons{
 	font-size: 15px
@@ -423,7 +420,6 @@ body{
 	background:#61727B;
 	border: none;
 	margin-right:5px;
-	/* margin-top: 10px; */
 	padding: 2%;
 	width: 27%;
 	height: 20%;
