@@ -214,6 +214,7 @@ body{
 }
 .btn-learn{
 	padding: 2%;
+	width: 120px;
 	background: transparent;
 	border-color: #61727B;
 }
@@ -477,6 +478,7 @@ body{
 .contact-heading{
 	font-size: 20px;
 	font-weight: 600;
+	margin-top: 0;
 }
 #social-media{
 	display: flex;
