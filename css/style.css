@@ -194,8 +194,6 @@ body{
 #experience-heading{
 	font-size: 30px;
 	font-weight: 700;
-	display: block;
-	width: 70%;
 }
 #experience-para{
 	font-size: 18px;
@@ -616,7 +614,7 @@ body{
 	}
 	#company-about-para{
 		font-size: 12px;
-		width: 90%;
+		width: 100%;
 	}
 	#about{
 		margin-left: 3%;
@@ -736,8 +734,8 @@ body{
 		padding: 0;
 	}
 	#company-about{
-		padding-left: 130px;
-		width: 60%;
+		padding-left: 167px;
+		width: 40%;
 		padding-top: 10%;
 	}
 	#about{
@@ -777,6 +775,9 @@ body{
 		width: 290px;
 		height: 200px;
 		padding: 0;
+	}
+	.center-image {
+		margin-left: 5%;
 	}
 	#caption1{
 		font-size: 20px;
@@ -961,6 +962,7 @@ body{
 		width: 90%;
 		height: 80%;
 		margin-left: 0;
+		margin-top: 0;
 		&::before,&::after{
 			display: none;
 		}
@@ -1105,6 +1107,7 @@ body{
 	}
 	#sub-p-head{
 		font-size: 22px;
+		padding-left: 10px;
 	}
 	#sub-p{
 		font-size: 10px;
@@ -1188,10 +1191,6 @@ body{
 	.image-experience-number{
 		width: 80%;
 		height: 80%;
-	}
-	#imgexp{
-		margin-left: 20px;
-		margin-top: 10px;
 	}
 	#experience-heading{
 		width: 100%;
