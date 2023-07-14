@@ -311,18 +311,24 @@ body{
 .customers{
 	display: flex;
 	padding: 0;
+	width: 96%;
 }
 #cus-p{
 	font-size: 30px;
 	font-weight: 700;
 	display: block;
-	width: 63%;
+	width: 35%;
+}
+.customers-head{
+	flex: 4;
 }
 #arrows{
 	display: flex;
     gap: 12px;
+	align-items: center;
+	justify-content: end;
     margin-top: 40px;
-    margin-left: 830px;
+	flex: 1;
 }
 #left-arrow{
 	color: rgb(195, 195, 195);
@@ -581,6 +587,10 @@ body{
 	.exp-nmbr{
 		margin-left: 45px;
 		gap: 50px;
+	}
+	#cus-p
+	{
+		width: 60%;
 	}
 	.caption-exp{
 		width: 45%;
@@ -852,9 +862,6 @@ body{
 		margin-left: 60px;
 		width: 65%;
 		height: 60%;
-	}
-	#cus-p {
-		padding-left: 20px;
 	}
 	#arrows{
 		margin-left: 24px;
@@ -1147,6 +1154,7 @@ body{
 		padding: 0;
 	}
 	#cus-p{
+		font-size: 25px;
 		margin-left: 0;
 		padding: 0;
 	}
@@ -1291,7 +1299,7 @@ body{
 		padding-top: 9px;
 	}
 	#cus-p{
-		font-size: 25px;
+		font-size: 23px;
 	}
 	#arrows{
 		margin-left: -80px;
