@@ -62,7 +62,7 @@ body{
 #square-box{
 	background: #61727B;
 	position: absolute;
-	top: 125px;
+	top: 200px;
 	left: 0px;
 	right: 57%;
 	color: white;
@@ -91,7 +91,7 @@ body{
 .center-image{
 	width: 70%;
 	height: 70%;
-	margin-left: 13%;
+	margin-left: 20%;
 	margin-right: 0;
 	position: relative;
 	z-index: 2;
@@ -103,20 +103,20 @@ body{
 }
 .center-image::before{
 	content: "  ";
+	color: transparent;
 	border: 3px solid #61727B;
 	background: transparent;
 	width: 100px;
 	height: 100px;
-	padding: 45px;
-	position: relative;
-	left: 35px;
-	top: -15px;
+	position: absolute;
+	left: -30px;
+	bottom: -24px;
 	z-index: 0;
 }
 .center-image::after{
 	position: absolute;
-	left: 102%;
-	bottom: 0;
+	left: 93%;
+    bottom: -2%;
     font: normal normal normal 35px FontAwesome; 
     content: '\f175';
     background: #61727B;
@@ -801,9 +801,6 @@ body{
 		top: 150px;
 		padding: 0;
 	}
-	.center-image {
-		margin-left: 5%;
-	}
 	#caption1{
 		font-size: 20px;
 		width: 74%;
@@ -906,8 +903,14 @@ body{
 		margin-left: 55%;
 	}
 	.center-image {
-		margin-left: 2%;
+		margin-left: 22%;
 		margin-top: 5%;
+	}
+	.center-image::after{
+		display: none;
+	}
+	.center-image::before{
+		display: none;
 	}
 	#square-box {
 		top: 122px;
@@ -997,9 +1000,6 @@ body{
 		height: 80%;
 		margin-left: 0;
 		margin-top: 0;
-		&::before,&::after{
-			display: none;
-		}
 	}
 	#caption1{
 		width: 86%;
@@ -1013,7 +1013,6 @@ body{
 		top: 356px;
 		left: 20px;
 		width: 90%;
-		height: 45%;
 	}
 	.service{
 		padding-top: 188px;
