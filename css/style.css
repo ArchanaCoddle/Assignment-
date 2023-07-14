@@ -316,24 +316,21 @@ body{
 	font-size: 30px;
 	font-weight: 700;
 	display: block;
-	width: 65%;
+	width: 63%;
 }
 #arrows{
 	display: flex;
-	width: 5%;
-	height: 8%;
-	margin-top: 40px;
-	margin-left: 780px;
+    gap: 12px;
+    margin-top: 40px;
+    margin-left: 830px;
 }
 #left-arrow{
 	color: rgb(195, 195, 195);
-	margin: 30%;
 	font-size: 40px;
 	font-weight: lighter;
 }
 #right-arrow{
 	color: #61727B;
-	margin: 30%;
 	font-size: 40px;
 	font-weight: lighter;
 }
@@ -693,7 +690,7 @@ body{
 		height: 100%;
 	}
 	#arrows{
-		margin-left: 300px;
+		margin-left:186px;
 	}
 }
 @media(max-width:780px){
