@@ -84,7 +84,7 @@ body{
 		margin-bottom: 0;
 }
 #sub1{
-	font-size: 25px;
+	font-size: 20px;
 	margin-bottom: 8%;
 	width: 400px;
 }
@@ -515,7 +515,7 @@ body{
 		margin-right: 3%;
 	}
 	#square-box{
-		top: 100px;
+		top: 184px;
 		left: 0px;
 		right: 60%;
 	}
@@ -936,8 +936,8 @@ body{
 	#cntr-heading
 	{
 		position: absolute;
-		top: 8%;
-		left: 87px
+		top: 6%;
+    	left: 58px;
 	}
 	#right-heading {
 		margin-right: 3%;
@@ -960,6 +960,9 @@ body{
 	#caption2 {
 		font-size: 23px;
 	}
+	#cus-p {
+		padding-left: 0px;
+	}
 	.caption-exp {
 		width: 81%;
 	}
@@ -968,6 +971,7 @@ body{
 	}
 	.search {
 		left: 107px;
+		width: 250px;
 	}
 	#company-about {
 		padding-left: 100px;
@@ -1050,7 +1054,7 @@ body{
 		width: 85%;
 	}
 	#square-box{
-		top: 356px;
+		top: 329px;
 		left: 20px;
 		width: 90%;
 	}
@@ -1228,7 +1232,7 @@ body{
 		top: 0px;
 	}
 	#square-box{
-		top: 270px;
+		top: 290px;
 		left: 20px;
 		width: 90%;
 	}
