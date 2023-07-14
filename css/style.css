@@ -128,7 +128,7 @@ body{
     justify-content: center;
 }
 .service{
-	padding-top: 5%;
+	padding-top: 7%;
 	display: flex;
 	gap: 50px;
 }
@@ -170,7 +170,7 @@ body{
 .service-para{
 	display: flex;
 	gap: 70px;
-	padding-bottom: 10%;
+	padding-bottom: 8%;
 }
 .p1{
 	font-size: 24px;
@@ -197,6 +197,7 @@ body{
 #experience-heading{
 	font-size: 30px;
 	font-weight: 700;
+	margin-top: 0;
 }
 #experience-para{
 	font-size: 18px;
