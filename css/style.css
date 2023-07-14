@@ -861,6 +861,9 @@ body{
 	#cus-p {
 		padding-left: 20px;
 	}
+	#arrows{
+		margin-left: 24px;
+	}
 	.testimnl{
 		display: inline;
 	}
