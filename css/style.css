@@ -891,6 +891,46 @@ body{
 		padding-left: 135px;
 	}
 }
+@media(max-width:568px){
+	#cntr-heading
+	{
+		position: absolute;
+		top: 8%;
+		left: 87px
+	}
+	#right-heading {
+		margin-right: 3%;
+		margin-left: 55%;
+	}
+	.center-image {
+		margin-top: 5%;
+	}
+	.center-image::after{
+		display: none;
+	}
+	.center-image::before{
+		display: none;
+	}
+	#square-box {
+		top: 120px;
+		width: 263px;
+	}	
+	#caption2 {
+		font-size: 23px;
+	}
+	.caption-exp {
+		width: 81%;
+	}
+	#arrows {
+		margin-left: -78px;
+	}
+	.search {
+		left: 107px;
+	}
+	#company-about {
+		padding-left: 100px;
+	}		
+}
 @media(max-width:500px){
 	#cntr-heading
 	{
@@ -915,7 +955,6 @@ body{
 	#square-box {
 		top: 122px;
 		width: 263px;
-		height: 185px;
 	}	
 	#caption2 {
 		font-size: 23px;
@@ -924,7 +963,7 @@ body{
 		width: 81%;
 	}
 	#arrows {
-		margin-left: -78px;
+		margin-left: -103px;
 	}
 	.search {
 		left: 107px;
@@ -1190,8 +1229,7 @@ body{
 	#square-box{
 		top: 270px;
 		left: 20px;
-		width: 90%px;
-		height: 230px;
+		width: 90%;
 	}
 	#caption1{
 		padding-top: 2%;
@@ -1207,7 +1245,7 @@ body{
 		font-size: 20px;
 	}
 	.service{
-		padding-top: 180px;
+		padding-top: 128px;
 	}
 	.service-para{
 		margin-left: 30px;
@@ -1296,13 +1334,12 @@ body{
 	#square-box{
 		left: 20px;
 		top: 230px;
-		height: 37%;
 	}
 	#sub1{
 		font-size: 10px;
 	}
 	.service{
-		padding-top: 110px;
+		padding-top: 77px;
 	}
 	.line{
 		width: 13%;
