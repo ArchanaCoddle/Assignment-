@@ -74,7 +74,8 @@ body{
 	padding-right: 6%;
 	display: flex;
 	flex-direction: column;
-	align-items: end;
+	align-items: center;
+    padding-left: 10%;
 }
 #caption1{
 		font-size: 33px;
@@ -407,7 +408,7 @@ body{
 .search{
 	position: relative;
 	left: 400px;
-	top: 30px;
+	top: 60px;
 	background: white;
 	max-width: 40%;
 	padding-top: 5px;
@@ -630,6 +631,7 @@ body{
 	}
 	.search{
 		left: 250px;
+		top: 40px;
 		max-width: 50%;
 	}
 	#company-about{
@@ -744,7 +746,7 @@ body{
 	}
 	.subscribe{
 		margin-left: 24%;
-		width: 70%;
+		width: 71%;
 	}
 	.search {
 		max-width: 57%;
@@ -1033,6 +1035,9 @@ body{
 	#close-icon{
 		color: #ffffff;
 	}
+	.content-box {
+		padding-left: 0;
+	}
 	#img1{
 		left: 20px;
 		top: 0px;
@@ -1194,7 +1199,8 @@ body{
 	}
 	.search{
 		max-width: 70%;
-    	left: 61px;
+		left: 85px;
+		top: 24px;
 	}
 	#search-para{
 		font-size: 8px;
@@ -1394,6 +1400,10 @@ body{
 	}
 	.subscribe{
 		width: 85%;
+	}
+	.search {
+		left: 56px;
+		top: 21px;
 	}
 	#sub-p{
 		font-size: 11px;
